@@ -1,15 +1,12 @@
+import Biography from "@/components/Bioghraphy";
+import Header from "@/components/Header";
+
 
 export default function Home() {
   return (
     <main>
-      <header>
-        <nav>
-
-        </nav>
-        <section>
-          
-        </section>
-      </header>
+      <Header />
+      <Biography/>
     </main>
   )
 }
