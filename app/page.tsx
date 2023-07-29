@@ -1,4 +1,5 @@
 import Biography from "@/components/Bioghraphy";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
 
@@ -7,6 +8,7 @@ export default function Home() {
     <main>
       <Header />
       <Biography/>
+      <Footer/>
     </main>
   )
 }
