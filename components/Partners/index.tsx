@@ -2,10 +2,10 @@
 import React from 'react'
 import Link from 'next/link'
 
-import Universal from '../Logo/Universal'
-import BlankerCords from '../Logo/BlankerCords'
-import VirginRecords from '../Logo/VirginRecords'
-import Atlantic from '../Logo/Atlantic'
+import Universal from '../Layout/Logo/Universal'
+import BlankerCords from '../Layout/Logo/BlankerCords'
+import VirginRecords from '../Layout/Logo/VirginRecords'
+import Atlantic from '../Layout/Logo/Atlantic'
 
 const Partners = () => {
     return (
@@ -13,16 +13,16 @@ const Partners = () => {
             <div className='flex py-28 justify-center items-center w-full h-full border border-[#313131] bg-gradient-to-t from-[#191919] to-[#111111]'>
                 <div className='flex flex-col items-center gap-y-10 lg:flex-row lg:gap-x-20'>
                     <Link href={"#"}>
-                        <Universal/>
+                        <Universal />
                     </Link>
                     <Link href={"#"}>
-                        <BlankerCords/>
+                        <BlankerCords />
                     </Link>
                     <Link href={"#"}>
-                        <VirginRecords/>
+                        <VirginRecords />
                     </Link>
                     <Link href={"#"}>
-                        <Atlantic/>
+                        <Atlantic />
                     </Link>
                 </div>
             </div>
