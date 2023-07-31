@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
 import Header from "@/components/Header";
 import NewTracks from "@/components/NewTracks";
+import Partners from "@/components/Partners";
 import SocialActivity from "@/components/SocialActivity";
 
 
@@ -14,6 +15,7 @@ export default function Home() {
       <NewTracks />
       <SocialActivity />
       <Gallery />
+      <Partners />
       <Footer />
     </main>
   )
