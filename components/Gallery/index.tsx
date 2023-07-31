@@ -3,7 +3,7 @@ import React from 'react'
 
 const Gallery = () => {
     return (
-        <section className='container my-20'>
+        <section className='container my-44'>
             <h2 className='mb-10 font-mono text-4xl'>
                 Gallery
             </h2>

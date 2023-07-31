@@ -1,10 +1,13 @@
+
 import Biography from "@/components/Bioghraphy";
-import Footer from "@/components/Footer";
+import Footer from "@/components/Layout/Footer";
 import Gallery from "@/components/Gallery";
-import Header from "@/components/Header";
+import Header from "@/components/Layout/Header";
 import NewTracks from "@/components/NewTracks";
 import Partners from "@/components/Partners";
 import SocialActivity from "@/components/SocialActivity";
+import Contatc from "@/components/Contact";
+import Composer from "@/components/Composer";
 
 
 export default function Home() {
@@ -15,7 +18,9 @@ export default function Home() {
       <NewTracks />
       <SocialActivity />
       <Gallery />
+      <Composer/>
       <Partners />
+      <Contatc/>
       <Footer />
     </main>
   )

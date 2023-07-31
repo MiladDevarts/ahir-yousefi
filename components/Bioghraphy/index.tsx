@@ -5,7 +5,7 @@ import { Facebook, Instagram, TikTok, Twitter } from '../Icons'
 
 const Biography = () => {
     return (
-        <section className='container my-20'>
+        <section className='container my-44'>
             <div className='flex flex-col lg:items-center lg:flex-row gap-y-4 lg:gap-x-8'>
                 <div className='w-full lg:order-2'>
                     <h2 className='text-white font-mono text-3xl lg:text-5xl'>BIO</h2>

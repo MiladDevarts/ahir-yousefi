@@ -5,7 +5,7 @@ import React from 'react'
 
 const SocialActivity = () => {
   return (
-    <section className='w-full bg-white py-10 my-10'>
+    <section className='w-full bg-white py-10 my-44'>
       <div className='container flex flex-col lg:flex-row lg:items-center lg:justify-between gap-y-6'>
         <div className='w-full lg:w-1/3 flex items-center gap-x-6 lg:gap-x-10'>
           <Image src={"/images/social-activity/profile.png"} className='w-32 lg:w-60' width={400} height={400} alt='ahir yousefi, ahir' />
