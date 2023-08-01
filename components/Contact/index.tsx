@@ -50,13 +50,13 @@ const Contatc = () => {
                 </div>
                 <div className='flex justify-center items-center gap-x-4'>
                     <Link href={"#"}>
-                        <Instagram/>
+                        <Instagram />
                     </Link>
                     <Link href={"#"}>
-                        <Facebook/>
+                        <Facebook />
                     </Link>
                     <Link href={"#"}>
-                        <TikTok/>
+                        <TikTok />
                     </Link>
                 </div>
             </div>
