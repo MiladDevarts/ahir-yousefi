@@ -1,10 +1,15 @@
 
 import React from 'react'
+import Link from 'next/link'
+
+import Instagram from '../Icons/White/instagram';
+import Facebook from '../Icons/White/Facebook';
+import TikTok from '../Icons/White/TikTok';
 
 const Contatc = () => {
     return (
         <section className='container flex flex-col gap-y-3 items-center my-36'>
-            <h2 className='text-3xl font-mono text-white mb-10'>
+            <h2 className='text-3xl font-mono text-white mb-6'>
                 Contact
             </h2>
             <form action="#" className='flex flex-col gap-y-6 w-full lg:w-1/2'>
@@ -38,6 +43,23 @@ const Contatc = () => {
                 </div>
                 <input type='submit' value={"Send message"} className='flex justify-center items-center w-full h-20 px-4 font-semibold bg-white text-black hover:cursor-pointer' />
             </form>
+            <div className='flex flex-col gap-y-6 mt-6'>
+                <div className='flex gap-x-3 items-center text-lg'>
+                    Or send email to
+                    <Link href={"#"} className='text-[#D1D1D1]'>info@ahiryousefi.com</Link>
+                </div>
+                <div className='flex justify-center items-center gap-x-4'>
+                    <Link href={"#"}>
+                        <Instagram/>
+                    </Link>
+                    <Link href={"#"}>
+                        <Facebook/>
+                    </Link>
+                    <Link href={"#"}>
+                        <TikTok/>
+                    </Link>
+                </div>
+            </div>
         </section>
     )
 }
