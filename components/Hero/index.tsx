@@ -1,5 +1,12 @@
 
 import React from 'react'
+import Link from 'next/link'
+
+import Spotidy from '../Icons/White/Spotify'
+import Soundcloud from '../Icons/White/Soundcloud'
+import AppleMusic from '../Icons/White/AppleMusic'
+import Youtube from '../Icons/White/Youtube'
+import Telegram from '../Icons/White/Telegram'
 
 const Hero = () => {
     return (
@@ -24,6 +31,23 @@ const Hero = () => {
                         </clipPath>
                     </defs>
                 </svg>
+            </div>
+            <div className='flex gap-x-2 justify-end'>
+                <Link href={"#"} className='flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full'>
+                    <Spotidy />
+                </Link>
+                <Link href={"#"} className='flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full'>
+                    <Soundcloud />
+                </Link>
+                <Link href={"#"} className='flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full'>
+                    <AppleMusic />
+                </Link>
+                <Link href={"#"} className='flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full'>
+                    <Youtube />
+                </Link>
+                <Link href={"#"} className='flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full'>
+                    <Telegram />
+                </Link>
             </div>
         </section>
     )
