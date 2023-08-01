@@ -8,6 +8,7 @@ import Partners from "@/components/Partners";
 import SocialActivity from "@/components/SocialActivity";
 import Contatc from "@/components/Contact";
 import Composer from "@/components/Composer";
+import LatestMusicVideo from "@/components/LatetsMusicVideo";
 
 
 export default function Home() {
@@ -18,9 +19,10 @@ export default function Home() {
       <NewTracks />
       <SocialActivity />
       <Gallery />
-      <Composer/>
+      <LatestMusicVideo />
+      <Composer />
       <Partners />
-      <Contatc/>
+      <Contatc />
       <Footer />
     </main>
   )
