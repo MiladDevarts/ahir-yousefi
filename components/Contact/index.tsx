@@ -2,13 +2,13 @@
 import React from 'react'
 import Link from 'next/link'
 
-import Instagram from '../Icons/White/instagram';
+import Instagram from '../Icons/White/Instagram';
 import Facebook from '../Icons/White/Facebook';
 import TikTok from '../Icons/White/TikTok';
 
 const Contatc = () => {
     return (
-        <section className='container flex flex-col gap-y-3 items-center my-36'>
+        <section id='contact' className='container flex flex-col gap-y-3 items-center my-36'>
             <h2 className='text-3xl font-mono text-white mb-6'>
                 Contact
             </h2>

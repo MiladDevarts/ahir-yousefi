@@ -15,16 +15,16 @@ const Navigation = () => {
             </span>
             <div className="hidden lg:flex gap-x-6">
                 <div className="flex flex-col gap-y-5">
-                    <Link href={"#"} className="flex items-center gap-x-2">
+                    <Link href={"#musics"} className="flex items-center gap-x-2">
                         Musics
                     </Link>
-                    <Link href={"#"}>
+                    <Link href={"#music_videos"}>
                         Videos
                     </Link>
                     <Link href={"#"}>
                         Manager
                     </Link>
-                    <Link href={"#"}>
+                    <Link href={"#contact"}>
                         Contact
                     </Link>
                 </div>

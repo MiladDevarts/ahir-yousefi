@@ -3,7 +3,7 @@ import React from 'react'
 
 const LatestMusicVideo = () => {
     return (
-        <section className='w-full bg-[#1D1D1D]'>
+        <section id='music_videos' className='w-full bg-[#1D1D1D]'>
             <div className='container flex justify-between pt-6 mb-4'>
                 <div className='flex flex-col'>
                     <h5 className='flex items-center gap-x-3 text-[#505050]'>
@@ -28,7 +28,7 @@ const LatestMusicVideo = () => {
                 </svg>
             </div>
             <div className='container h-[400px] lg:h-[700px]'>
-                <div className='w-full h-full bg-center bg-cover'  style={{ backgroundImage: `url('/images/thumbnails/video/1.jpg')` }}>
+                <div className='w-full h-full bg-center bg-cover' style={{ backgroundImage: `url('/images/thumbnails/video/1.jpg')` }}>
 
                 </div>
             </div>
