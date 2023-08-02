@@ -9,7 +9,7 @@ import SocialActivity from "@/components/SocialActivity";
 import Contatc from "@/components/Contact";
 import Composer from "@/components/Composer";
 import LatestMusicVideo from "@/components/LatetsMusicVideo";
-
+import MusicPlayer from "@/components/MusicPlayer";
 
 export default function Home() {
   return (
@@ -18,6 +18,7 @@ export default function Home() {
       <Biography />
       <NewTracks />
       <SocialActivity />
+      <MusicPlayer />
       <Gallery />
       <LatestMusicVideo />
       <Composer />
