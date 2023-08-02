@@ -1,15 +1,33 @@
+"use client"
 
+import React, { useEffect } from 'react'
 import Link from 'next/link'
-import React from 'react'
+
+import Aos from 'aos'
+import "aos/dist/aos.css";
+
 import { Facebook, Instagram, TikTok, Twitter } from '../Icons'
 
 const Biography = () => {
+
+    useEffect(() => {
+        Aos.init({
+            easing: "ease-out-cubic",
+            once: true,
+            offset: 200,
+        });
+    }, []);
+
+    useEffect(() => {
+        Aos.refresh()
+    }, [])
+
     return (
         <section className='container my-44'>
             <div className='flex flex-col lg:items-center lg:flex-row gap-y-4 lg:gap-x-8'>
                 <div className='w-full lg:order-2'>
-                    <h2 className='text-white font-mono text-3xl lg:text-5xl'>BIO</h2>
-                    <div className='w-full lg:border-b-2 lg:border-[#313131]'>
+                    <h2 data-aos="zoom-out-right" data-aos-delay="400" className='text-white font-mono text-3xl lg:text-5xl'>BIO</h2>
+                    <div data-aos="zoom-out-left" data-aos-delay="500" className='w-full lg:border-b-2 lg:border-[#313131]'>
                         <p className='lg:max-w-lg text-sm lg:text-base my-4 text-[#CBCBCB] lg:pl-6 lg:pb-10'>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
                         </p>
@@ -33,7 +51,7 @@ const Biography = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='w-full pt-6 pb-10 border-b border-[#313131] lg:p-0 lg:border-none'>
+                <div data-aos="zoom-out" data-aos-delay="300" className='w-full pt-6 pb-10 border-b border-[#313131] lg:p-0 lg:border-none'>
                     <div className='w-full h-96 bg-center bg-cover' style={{ backgroundImage: `url('/images/home/biography.jpg')` }}>
                     </div>
                 </div>

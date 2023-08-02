@@ -1,6 +1,10 @@
+"use client"
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import Link from 'next/link'
+
+import Aos from 'aos'
+import "aos/dist/aos.css";
 
 import Spotidy from '../Icons/White/Spotify'
 import Soundcloud from '../Icons/White/Soundcloud'
@@ -9,6 +13,19 @@ import Youtube from '../Icons/White/Youtube'
 import Telegram from '../Icons/White/Telegram'
 
 const Hero = () => {
+
+    useEffect(() => {
+        Aos.init({
+            easing: "ease-out-cubic",
+            once: true,
+            offset: 200,
+        });
+    }, []);
+
+    useEffect(() => {
+        Aos.refresh()
+    }, [])
+
     return (
         <section className='container flex flex-col justify-between'>
             <div className='flex items-center gap-x-5 mt-10 lg:mt-0'>
@@ -42,19 +59,19 @@ const Hero = () => {
                 </div>
             </div>
             <div className='flex gap-x-2 justify-end mt-20'>
-                <Link href={"#"} className='flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full'>
+                <Link data-aos="zoom-out" data-aos-delay="100" href={"#"} className='flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full'>
                     <Spotidy />
                 </Link>
-                <Link href={"#"} className='flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full'>
+                <Link data-aos="zoom-out" data-aos-delay="200" href={"#"} className='flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full'>
                     <Soundcloud />
                 </Link>
-                <Link href={"#"} className='flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full'>
+                <Link data-aos="zoom-out" data-aos-delay="300" href={"#"} className='flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full'>
                     <AppleMusic />
                 </Link>
-                <Link href={"#"} className='flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full'>
+                <Link data-aos="zoom-out" data-aos-delay="400" href={"#"} className='flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full'>
                     <Youtube />
                 </Link>
-                <Link href={"#"} className='flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full'>
+                <Link data-aos="zoom-out" data-aos-delay="500" href={"#"} className='flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full'>
                     <Telegram />
                 </Link>
             </div>
