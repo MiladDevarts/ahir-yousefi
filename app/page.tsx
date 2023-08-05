@@ -1,3 +1,6 @@
+"use client"
+
+import { useContext } from "react";
 
 import Biography from "@/components/Bioghraphy";
 import Footer from "@/components/Layout/Footer";
@@ -12,6 +15,8 @@ import LatestMusicVideo from "@/components/LatetsMusicVideo";
 import MusicPlayer from "@/components/MusicPlayer";
 
 export default function Home() {
+
+
   return (
     <main>
       <Header />

@@ -5,10 +5,12 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import localFont from 'next/font/local'
 
-const inter = Inter({ 
+import MenuProvider from '@/context/MenuProvider'
+
+const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
- })
+})
 
 export const azonix = localFont({
   src: [
@@ -33,6 +35,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${azonix.variable} ${inter.variable}`}>
+      <MenuProvider>
+        {children}
+      </MenuProvider>
       <body className={inter.className}>{children}</body>
     </html>
   )

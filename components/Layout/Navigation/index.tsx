@@ -1,10 +1,11 @@
 
 import Link from 'next/link'
-import Logo from '../Logo'
 
+import Logo from '../Logo'
 import { Facebook, Instagram, TikTok, Twitter } from "@/components/Icons";
 
 const Navigation = () => {
+
     return (
         <nav className="container flex justify-between items-center lg:items-start py-6 lg:py-12">
             <Logo />
