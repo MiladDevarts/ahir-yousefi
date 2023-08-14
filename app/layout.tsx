@@ -1,6 +1,6 @@
 
-import './globals.css'
 import type { Metadata } from 'next'
+import './globals.css'
 
 import { Inter } from 'next/font/google'
 import localFont from 'next/font/local'
@@ -11,7 +11,7 @@ const inter = Inter({
   variable: '--font-inter',
 })
 
-export const azonix = localFont({
+const azonix = localFont({
   src: [
     {
       path: '../public/fonts/Azonix.otf',
@@ -34,8 +34,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${azonix.variable} ${inter.variable}`}>
-        {children}
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   )
 }
