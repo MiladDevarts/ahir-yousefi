@@ -1,7 +1,23 @@
 
-import React from 'react'
+import React, { useEffect } from 'react'
+
+import Aos from 'aos'
+import "aos/dist/aos.css";
 
 const LatestMusicVideo = () => {
+
+    useEffect(() => {
+        Aos.init({
+            easing: "ease-out-cubic",
+            once: true,
+            offset: 200,
+        });
+    }, []);
+
+    useEffect(() => {
+        Aos.refresh()
+    }, [])
+
     return (
         <section id='music_videos' className='w-full bg-[#1D1D1D]'>
             <div className='container flex justify-between pt-6 mb-4'>
