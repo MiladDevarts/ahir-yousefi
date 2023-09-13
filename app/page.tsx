@@ -13,6 +13,7 @@ import Contatc from "@/components/Contact";
 import Composer from "@/components/Composer";
 import LatestMusicVideo from "@/components/LatetsMusicVideo";
 import MusicPlayer from "@/components/MusicPlayer";
+import LatestAlbum from "@/components/LatestAlbum";
 
 export default function Home() {
 
@@ -21,6 +22,7 @@ export default function Home() {
     <main>
       <Header />
       <Biography />
+      <LatestAlbum/>
       <NewTracks />
       <SocialActivity />
       <MusicPlayer />

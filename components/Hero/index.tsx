@@ -29,7 +29,7 @@ const Hero = () => {
     return (
         <section className='container flex flex-col justify-between'>
             <div className='flex items-center gap-x-5 mt-10 lg:mt-0'>
-                <span className='py-3 px-4 bg-white text-black font-semibold italic'>
+                <span className='rounded-2xl py-4 px-8 text-lg bg-white text-black font-semibold italic'>
                     New release
                 </span>
                 <span className='text-white font-semibold'>

@@ -22,7 +22,10 @@ const SocialActivity = () => {
         </div>
         <div className='w-full lg:w-1/2'>
           <p className='text-[#7A7A7A] text-sm lg:text-base max-w-xl'>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+            Ahir Yousefi, born in Tehran on August 10th, 1997, embarked on his musical journey at the age of 16. His strong passion for music led him to seamlessly transition from a background in electrical engineering to pursue education in music at the Tehran University of Art.
+            <br />
+            <br />
+            Today, Ahir Yousefi is renowned as a songwriter, composer, musician, and accomplished singer.
           </p>
         </div>
       </div>

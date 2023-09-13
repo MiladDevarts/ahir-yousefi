@@ -29,7 +29,10 @@ const Biography = () => {
                     <h2 data-aos="zoom-out-right" data-aos-delay="400" className='text-white font-mono text-3xl lg:text-5xl'>BIO</h2>
                     <div data-aos="zoom-out-left" data-aos-delay="500" className='w-full lg:border-b-2 lg:border-[#313131]'>
                         <p className='lg:max-w-lg text-sm lg:text-base my-4 text-[#CBCBCB] lg:pl-6 lg:pb-10'>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+                            Ahir Yousefi, born in Tehran on August 10th, 1997, embarked on his musical journey at the age of 16. His strong passion for music led him to seamlessly transition from a background in electrical engineering to pursue education in music at the Tehran University of Art.
+                            <br />
+                            <br />
+                            Today, Ahir Yousefi is renowned as a songwriter, composer, musician, and accomplished singer.
                         </p>
                     </div>
                     <div className='hidden lg:flex gap-x-5 items-center my-8 lg:pl-6'>
@@ -52,7 +55,7 @@ const Biography = () => {
                     </div>
                 </div>
                 <div data-aos="zoom-out" data-aos-delay="300" className='w-full pt-6 pb-10 border-b border-[#313131] lg:p-0 lg:border-none'>
-                    <div className='w-full h-96 bg-center bg-cover' style={{ backgroundImage: `url('/images/home/biography.jpg')` }}>
+                    <div className='w-full h-[600px] bg-center bg-cover rounded-[30px]' style={{ backgroundImage: `url('/images/home/biography.jpg')` }}>
                     </div>
                 </div>
                 <div className='flex lg:hidden gap-x-5 items-center my-8 lg:pl-6'>

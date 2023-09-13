@@ -5,14 +5,14 @@ const LatestMusicVideo = () => {
     return (
         <section id='music_videos' className='w-full bg-[#1D1D1D]'>
             <div className='container flex justify-between pt-6 mb-4'>
-                <div className='flex flex-col'>
-                    <h5 className='flex items-center gap-x-3 text-[#505050]'>
+                <div className='flex flex-col mt-10'>
+                    <h5 className='flex items-center gap-x-3 text-[#505050] text-lg'>
                         <svg width="26" height="1" viewBox="0 0 26 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <line y1="0.5" x2="26" y2="0.5" stroke="#868686" />
                         </svg>
                         Watch New Music video directly here
                     </h5>
-                    <h2 className='font-mono my-3 text-2xl pl-10'>
+                    <h2 className='font-mono my-3 text-3xl pl-10'>
                         Baghalam kon
                     </h2>
                 </div>
