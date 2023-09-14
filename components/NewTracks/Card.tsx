@@ -16,7 +16,7 @@ const Card: React.FC<NewTrackProps> = (props) => {
             </div>
             <h3 className='text-white font-mono text-xl'>{props.title}</h3>
             <span className='text-[#CBCBCB]'>{props.artist}</span>
-            <Link href={props.url} className='rounded-2xl inline-block w-1/3 bg-white px-8 py-2 text-black text-center'>
+            <Link href={props.url} className='rounded-2xl inline-block w-[250px] lg:w-1/3 bg-white px-8 py-2 text-black text-center'>
                 Listen now
             </Link>
         </div>
