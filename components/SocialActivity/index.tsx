@@ -10,18 +10,17 @@ const SocialActivity = () => {
         <div className='w-full lg:w-1/3 flex items-center gap-x-6 lg:gap-x-10'>
           <Image src={"/images/social-activity/profile.png"} className='w-32 lg:w-60' width={400} height={400} alt='ahir yousefi, ahir' />
           <div className='flex flex-col gap-y-3 text-black'>
-            <h3 className='text-xl font-mono'>Ahir yousefi</h3>
+            <h3 className='text-2xl font-mono'>Ahir yousefi</h3>
             <div className='flex items-center gap-x-3'>
-              <span className='text-3xl font-mono'>170K</span>
-              <span className='font-light'>Followers</span>
+              <span className='text-xl font-mono'>INSTAGRAM</span>
             </div>
-            <Link href={"#"} className='hidden lg:block bg-black px-4 py-2 w-2/3 text-white text-center text-sm mt-10'>
+            <Link href={"#"} className='rounded-full block bg-black px-5 py-3 w-2/3 text-white text-center text-sm mt-2 mb-10'>
               Follow
             </Link>
           </div>
         </div>
         <div className='w-full lg:w-1/2'>
-          <p className='text-[#7A7A7A] text-sm lg:text-base max-w-xl'>
+          <p className='text-[#7A7A7A] text-lg max-w-xl'>
             Ahir Yousefi, born in Tehran on August 10th, 1997, embarked on his musical journey at the age of 16. His strong passion for music led him to seamlessly transition from a background in electrical engineering to pursue education in music at the Tehran University of Art.
             <br />
             <br />
