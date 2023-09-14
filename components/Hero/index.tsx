@@ -58,7 +58,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex gap-x-2 justify-end mt-20'>
+            <div className='flex gap-x-2 justify-end mt-10'>
                 <Link data-aos="zoom-out" data-aos-delay="100" href={"#"} className='flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full'>
                     <Spotidy />
                 </Link>
