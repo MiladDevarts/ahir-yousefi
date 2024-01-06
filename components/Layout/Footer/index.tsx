@@ -1,7 +1,6 @@
 
 
 import { AppleMusic, Soundcloud, Spotify, Telegram, Youtube } from '../../Icons'
-import BlackLogo from '../Logo/Black'
 import Link from 'next/link'
 
 const Footer = () => {
