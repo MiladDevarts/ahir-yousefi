@@ -16,7 +16,7 @@ interface ComposerProps {
 
 const Card: React.FC<ComposerProps> = (props) => {
     return (
-        <div className='relative flex flex-col gap-y-6'>
+        <div className='relative flex flex-col gap-6'>
             <div className='rounded-2xl w-full h-80 bg-center bg-cover' style={{ backgroundImage: `url(${props.image})` }}>
             </div>
             <h3 className='text-white flex items-center gap-x-3 text-xl'>
