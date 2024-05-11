@@ -94,7 +94,7 @@ const Contatc = () => {
           <textarea
             rows={200}
             id="Message"
-            className="rounded-2xl text-white flex items-center w-full h-32 p-4 bg-[#1B1B1B]"
+            className="rounded-2xl text-white flex items-center w-full h-32 p-4 bg-[#1B1B1B] focus:outline-none"
           ></textarea>
         </div>
         <input
