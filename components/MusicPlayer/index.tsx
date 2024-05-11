@@ -40,6 +40,17 @@ const MusicPlayer = () => {
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
               loading="lazy"
             ></iframe>
+
+            <iframe
+              className="rounded-2xl"
+              src="https://open.spotify.com/embed/artist/4463nfFMmK1cwAWBQDwT5e?utm_source=generator&theme=0"
+              width="100%"
+              height="352"
+              frameBorder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       </div>
