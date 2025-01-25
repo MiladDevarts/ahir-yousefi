@@ -5,7 +5,7 @@ import Instagram from "../Icons/White/Instagram";
 import Facebook from "../Icons/White/Facebook";
 import TikTok from "../Icons/White/TikTok";
 
-const Contatc = () => {
+const Contact = () => {
   return (
     <section
       id="contact"
@@ -126,4 +126,4 @@ const Contatc = () => {
   );
 };
 
-export default Contatc;
+export default Contact;

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useContext } from "react";
 
@@ -9,20 +9,18 @@ import Header from "@/components/Layout/Header";
 import NewTracks from "@/components/NewTracks";
 import Partners from "@/components/Partners";
 import SocialActivity from "@/components/SocialActivity";
-import Contatc from "@/components/Contact";
+import Contact from "@/components/Contact";
 import Composer from "@/components/Composer";
 import LatestMusicVideo from "@/components/LatetsMusicVideo";
 import MusicPlayer from "@/components/MusicPlayer";
 import LatestAlbum from "@/components/LatestAlbum";
 
 export default function Home() {
-
-
   return (
     <main>
       <Header />
       <Biography />
-      <LatestAlbum/>
+      <LatestAlbum />
       <NewTracks />
       <SocialActivity />
       <MusicPlayer />
@@ -30,8 +28,8 @@ export default function Home() {
       <LatestMusicVideo />
       <Composer />
       <Partners />
-      <Contatc />
+      <Contact />
       <Footer />
     </main>
-  )
+  );
 }
