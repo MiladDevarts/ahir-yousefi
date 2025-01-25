@@ -103,7 +103,7 @@ const Contact = () => {
           className="rounded-2xl flex justify-center items-center w-full h-[70px] px-4 font-semibold bg-white text-black hover:cursor-pointer border border-white hover:bg-white/0 hover:text-white transition-all"
         />
       </form>
-      <div className="flex flex-col gap-y-10 mt-6">
+      <div className="flex flex-col items-center gap-y-10 mt-6">
         <div className="flex gap-x-[34px] items-center text-lg mr-7">
           Or send email to
           <Link href={"mailto:info@p91.bio"} className="text-[#D1D1D1]">
@@ -119,6 +119,12 @@ const Contact = () => {
           </Link>
           <Link href={"#"}>
             <TikTok />
+          </Link>
+        </div>
+        <div className="flex items-center gap-2 text-[#939393] mt-[60px]">
+          Design by
+          <Link href={"https://rivdesign.se"} className="text-white">
+            Riv Design
           </Link>
         </div>
       </div>
