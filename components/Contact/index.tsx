@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="container flex flex-col gap-y-3 items-center my-36"
+      className="container flex flex-col gap-y-6 items-center my-36"
     >
       <h2 className="text-3xl font-mono text-white mb-6">Contact</h2>
       <form action="#" className="flex flex-col gap-y-6 w-full lg:w-1/2">
@@ -103,14 +103,14 @@ const Contact = () => {
           className="rounded-2xl flex justify-center items-center w-full h-[70px] px-4 font-semibold bg-white text-black hover:cursor-pointer border border-white hover:bg-white/0 hover:text-white transition-all"
         />
       </form>
-      <div className="flex flex-col gap-y-6 mt-6">
-        <div className="flex gap-x-3 items-center text-lg">
+      <div className="flex flex-col gap-y-10 mt-6">
+        <div className="flex gap-x-[34px] items-center text-lg mr-7">
           Or send email to
-          <Link href={"mailto:info@ahiryousefi.com"} className="text-[#D1D1D1]">
-            info@ahiryousefi.com
+          <Link href={"mailto:info@p91.bio"} className="text-[#D1D1D1]">
+            info@p91.bio
           </Link>
         </div>
-        <div className="flex justify-center items-center gap-x-4">
+        <div className="flex justify-center items-center gap-x-[24px]">
           <Link href={"#"}>
             <Instagram />
           </Link>
