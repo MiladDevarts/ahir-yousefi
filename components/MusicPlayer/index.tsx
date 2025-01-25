@@ -19,7 +19,6 @@ const MusicPlayer = () => {
               Now you stream musics here
             </span>
           </div>
-          <h3 className="ml-10 font-mono text-4xl">Baghalam kon</h3>
           <div className="flex flex-col gap-3">
             <iframe
               src="https://open.spotify.com/embed/track/3HMY0r2BAdpasXMY8rseR0?utm_source=generator&theme=0"
@@ -49,7 +48,7 @@ const MusicPlayer = () => {
         </div>
       </div>
       <div
-        className="w-full lg:w-1/2 h-[400px] lg:h-[700px] bg-center bg-cover"
+        className="w-full lg:w-[40%] h-[400px] lg:h-[700px] bg-center bg-cover rounded-[24px]"
         style={{
           backgroundImage: `url('/images/music-player/background.jpg')`,
         }}
