@@ -1,27 +1,41 @@
+import React from "react";
+import Link from "next/link";
 
-import React from 'react'
-import Link from 'next/link'
-
-import Card from './Card'
+import Card from "./Card";
 
 const index = () => {
   return (
-    <section id='musics' className='container flex flex-col gap-y-8 lg:gap-y-16 py-22'>
-      <div className='flex justify-between items-center'>
-        <h2 className='text-white font-mono text-2xl lg:text-4xl'>
+    <section id="musics" className="container flex flex-col py-22">
+      <div className="flex justify-between items-center">
+        <h2 className="text-white text-2xl font-bold lg:text-4xl mb-11">
           New Tracks
         </h2>
-        <Link className='tetx-[#CBCBCB] font-light' href={"#"}>
+        {/* <Link className='tetx-[#CBCBCB] font-light' href={"#"}>
           View all
-        </Link>
+        </Link> */}
       </div>
-      <div className='w-full flex flex-col gap-y-6 lg:grid lg:grid-cols-3 lg:gap-x-4 '>
-        <Card image={'/images/thumbnails/1.jpg'} title={'Baghalam kon'} artist={'Ahir Yousefi'} url={'#'} />
-        <Card image={'/images/thumbnails/2.jpg'} title={'Baghalam kon'} artist={'Ahir Yousefi'} url={'#'} />
-        <Card image={'/images/thumbnails/3.jpg'} title={'Baghalam kon'} artist={'Ahir Yousefi'} url={'#'} />
+      <div className="w-full flex flex-col gap-y-6 lg:grid lg:grid-cols-3 lg:gap-x-4 ">
+        <Card
+          image={"/images/thumbnails/labkhand.jpg"}
+          title={"Labkhand"}
+          release_date={"2024"}
+          url={"#"}
+        />
+        <Card
+          image={"/images/thumbnails/mahrokh.jpg"}
+          title={"Mahrokh"}
+          release_date={"2022"}
+          url={"#"}
+        />
+        <Card
+          image={"/images/thumbnails/hezarToo.jpg"}
+          title={"Hezar Too"}
+          release_date={"2020"}
+          url={"#"}
+        />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default index
+export default index;
