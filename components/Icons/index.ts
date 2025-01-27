@@ -8,5 +8,6 @@ import Telegram from "./Telegram";
 import TikTok from "./TikTok";
 import Twitter from "./Twitter";
 import Youtube from "./Youtube";
+import Play from "./play";
 
-export { Facebook, Instagram, TikTok, Twitter, Spotify, Soundcloud, AppleMusic, Youtube, Telegram }
+export { Facebook, Instagram, TikTok, Twitter, Spotify, Soundcloud, AppleMusic, Youtube, Telegram, Play }
