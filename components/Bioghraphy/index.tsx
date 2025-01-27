@@ -24,7 +24,7 @@ const Biography = () => {
   }, []);
 
   return (
-    <section className="container my-44">
+    <section id="biography" className="container my-44">
       <div className="flex flex-col lg:items-center lg:flex-row gap-y-4 lg:gap-x-8">
         <div className="w-2/3 lg:order-2">
           <h2

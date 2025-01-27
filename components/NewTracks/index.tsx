@@ -5,7 +5,7 @@ import Card from "./Card";
 
 const index = () => {
   return (
-    <section id="musics" className="container flex flex-col py-22">
+    <section id="tracks" className="container flex flex-col py-22">
       <div className="flex justify-between items-center">
         <h2 className="text-white text-2xl font-bold lg:text-4xl mb-11">
           New Tracks

@@ -21,6 +21,7 @@ const LatestAlbum = () => {
   return (
     <>
       <section
+        id="album"
         data-aos="fade-up"
         className="hidden lg:flex flex-col justify-between w-full h-[800px] my-40 bg-no-repeat bg-cover  bg-center"
         style={{ backgroundImage: `url('/images/home/album.jpg')` }}
