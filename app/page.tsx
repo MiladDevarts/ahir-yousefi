@@ -26,7 +26,7 @@ export default function Home() {
       <MusicPlayer />
       <Gallery />
       <LatestMusicVideo />
-      <Composer />
+      {/* <Composer /> */}
       <Partners />
       <Contact />
       <Footer />
