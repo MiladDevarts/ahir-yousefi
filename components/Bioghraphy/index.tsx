@@ -8,6 +8,8 @@ import "aos/dist/aos.css";
 
 import { Facebook, Instagram, TikTok, Twitter } from "../Icons";
 
+import { socialMedia } from "@/app/config";
+
 const Biography = () => {
   useEffect(() => {
     Aos.init({
@@ -99,16 +101,10 @@ const Biography = () => {
           >
             <line y1="0.5" x2="24" y2="0.5" stroke="white" />
           </svg>
-          <Link href={"#"}>
+          <Link href={socialMedia.instagram}>
             <Instagram />
           </Link>
-          <Link href={"#"}>
-            <Twitter />
-          </Link>
-          <Link href={"#"}>
-            <Facebook />
-          </Link>
-          <Link href={"#"}>
+          <Link href={socialMedia.tiktok}>
             <TikTok />
           </Link>
         </div>

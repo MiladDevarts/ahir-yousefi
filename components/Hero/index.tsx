@@ -12,6 +12,8 @@ import AppleMusic from "../Icons/White/AppleMusic";
 import Youtube from "../Icons/White/Youtube";
 import Telegram from "../Icons/White/Telegram";
 
+import { socialMedia } from "@/app/config";
+
 const Hero = () => {
   useEffect(() => {
     Aos.init({
@@ -77,7 +79,7 @@ const Hero = () => {
         <Link
           data-aos="zoom-out"
           data-aos-delay="100"
-          href={"#"}
+          href={socialMedia.spotify}
           className="flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full"
         >
           <Spotidy />
@@ -85,7 +87,7 @@ const Hero = () => {
         <Link
           data-aos="zoom-out"
           data-aos-delay="200"
-          href={"#"}
+          href={socialMedia.sound_cloud}
           className="flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full"
         >
           <Soundcloud />
@@ -93,7 +95,7 @@ const Hero = () => {
         <Link
           data-aos="zoom-out"
           data-aos-delay="300"
-          href={"#"}
+          href={socialMedia.apple_music}
           className="flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full"
         >
           <AppleMusic />
@@ -101,7 +103,7 @@ const Hero = () => {
         <Link
           data-aos="zoom-out"
           data-aos-delay="400"
-          href={"#"}
+          href={socialMedia.youtube}
           className="flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full"
         >
           <Youtube />
@@ -109,7 +111,7 @@ const Hero = () => {
         <Link
           data-aos="zoom-out"
           data-aos-delay="500"
-          href={"#"}
+          href={socialMedia.telegram}
           className="flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full"
         >
           <Telegram />
