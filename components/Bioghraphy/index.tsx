@@ -81,7 +81,7 @@ const Biography = () => {
         <div
           data-aos="zoom-out"
           data-aos-delay="300"
-          className="w-full pt-6 pb-10 border-b border-[#313131] lg:p-0 lg:border-none"
+          className="w-[486px] h-[486px] pt-6 pb-10 border-b border-[#313131] lg:p-0 lg:border-none"
         >
           <div
             className="w-[486px] h-[486px] bg-center bg-cover rounded-[30px]"
