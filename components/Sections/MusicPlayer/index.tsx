@@ -9,7 +9,14 @@ import {
   SpeakerWaveIcon,
 } from "@heroicons/react/24/solid";
 
-const audioList = [
+interface AudioTrack {
+  name: string;
+  artist: string;
+  src: string;
+  duration: number;
+}
+
+const audioList: AudioTrack[] = [
   {
     name: "Labkhand",
     artist: "Pooriya Arian",
@@ -24,22 +31,25 @@ const audioList = [
   },
 ];
 
-const formatTime = (seconds) => {
+const formatTime = (seconds: number): string => {
   const minutes = Math.floor(seconds / 60);
   const remainingSeconds = Math.floor(seconds % 60);
   return `${minutes}:${remainingSeconds.toString().padStart(2, "0")}`;
 };
 
 const MusicPlayer = () => {
-  const [currentTrack, setCurrentTrack] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [volume, setVolume] = useState(1);
-  const [trackDurations, setTrackDurations] = useState({});
-  const audioRef = useRef(new Audio(audioList[0].src));
+  const [currentTrack, setCurrentTrack] = useState<number>(0);
+  const [isPlaying, setIsPlaying] = useState<boolean>(false);
+  const [volume, setVolume] = useState<number>(1);
+  const [trackDurations, setTrackDurations] = useState<Record<number, number>>(
+    {}
+  );
+  const [currentTime, setCurrentTime] = useState<number>(0);
+  const audioRef = useRef<HTMLAudioElement>(new Audio(audioList[0].src));
 
   useEffect(() => {
     const loadDurations = async () => {
-      const durations = {};
+      const durations: Record<number, number> = {};
       for (let i = 0; i < audioList.length; i++) {
         const audio = new Audio(audioList[i].src);
         audio.addEventListener("loadedmetadata", () => {
@@ -49,10 +59,22 @@ const MusicPlayer = () => {
       }
     };
     loadDurations();
+
+    // Add time update listener
+    const audio = audioRef.current;
+    const updateTime = () => {
+      setCurrentTime(audio.currentTime);
+    };
+    audio.addEventListener("timeupdate", updateTime);
+
+    return () => {
+      audio.removeEventListener("timeupdate", updateTime);
+    };
   }, []);
 
   useEffect(() => {
     audioRef.current.src = audioList[currentTrack].src;
+    setCurrentTime(0);
     if (isPlaying) {
       audioRef.current.play();
     }
@@ -62,7 +84,7 @@ const MusicPlayer = () => {
     audioRef.current.volume = volume;
   }, [volume]);
 
-  const togglePlay = (index) => {
+  const togglePlay = (index: number) => {
     if (currentTrack !== index) {
       setCurrentTrack(index);
       setIsPlaying(true);
@@ -82,6 +104,12 @@ const MusicPlayer = () => {
 
   const playPrev = () => {
     setCurrentTrack((prev) => (prev - 1 + audioList.length) % audioList.length);
+  };
+
+  const handleProgressChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const time = parseFloat(e.target.value);
+    audioRef.current.currentTime = time;
+    setCurrentTime(time);
   };
 
   return (
@@ -116,7 +144,7 @@ const MusicPlayer = () => {
                 <div className="flex items-center gap-2">
                   <div className="flex items-center gap-4">
                     <div
-                      className="bg-white rounded-full flex justify-center items-center p-2  cursor-pointer transition-colors"
+                      className="bg-white rounded-full flex justify-center items-center p-2 cursor-pointer transition-colors"
                       onClick={() => togglePlay(index)}
                     >
                       {isPlaying && currentTrack === index ? (
@@ -142,68 +170,79 @@ const MusicPlayer = () => {
 
           {/* Player Controls */}
           <div className="w-full bg-[#1B1B1B] bg-opacity-50 backdrop-blur-md p-6 rounded-[15px] absolute bottom-0 left-0">
-            <div className="flex gap-4 justify-between">
-              <div className="flex justify-between items-center">
-                <div>
-                  <h3 className="text-white font-semibold">
-                    {audioList[currentTrack].name}
-                  </h3>
-                  <p className="text-gray-300">
-                    {audioList[currentTrack].artist}
-                  </p>
-                </div>
-              </div>
-              <div className="flex justify-center items-center gap-6">
-                <BackwardIcon
-                  className="text-white w-6 h-6 cursor-pointer"
-                  onClick={playPrev}
-                />
-                <div
-                  className="p-3 rounded-full cursor-pointer"
-                  onClick={() => togglePlay(currentTrack)}
-                >
-                  {isPlaying ? (
-                    <PauseIcon className="text-white w-9 h-9" />
-                  ) : (
-                    <PlayIcon className="text-white w-9 h-9" />
-                  )}
-                </div>
-                <ForwardIcon
-                  className="text-white w-6 h-6 cursor-pointer"
-                  onClick={playNext}
-                />
-              </div>
-              <div className="flex items-center gap-4">
-                <SpeakerWaveIcon className="text-white w-5 h-5" />
+            <div className="flex flex-col gap-4">
+              <div className="flex items-center gap-4 absolute bottom-0 left-5 right-5">
+                {/* <span className="text-white w-10 [min-width:2.5rem]">
+                  {formatTime(currentTime)}
+                </span> */}
                 <input
                   type="range"
                   min="0"
-                  max="1"
-                  step="0.1"
-                  value={volume}
-                  onChange={(e) => setVolume(parseFloat(e.target.value))}
-                  className="w-24 h-1 bg-gray-600 rounded-lg appearance-none cursor-pointer accent-blue-500 
-                  [&::-webkit-slider-thumb]:appearance-none 
-                  [&::-webkit-slider-thumb]:h-3 
-                  [&::-webkit-slider-thumb]:w-3 
-                  [&::-webkit-slider-thumb]:rounded-full 
-                  [&::-webkit-slider-thumb]:bg-white
-                  hover:[&::-webkit-slider-thumb]:bg-blue-400
-                  [&::-webkit-slider-thumb]:transition-all
-                  [&::-webkit-slider-thumb]:cursor-pointer
-                  [&::-moz-range-thumb]:appearance-none
-                  [&::-moz-range-thumb]:h-3
-                  [&::-moz-range-thumb]:w-3
-                  [&::-moz-range-thumb]:rounded-full
-                  [&::-moz-range-thumb]:bg-white
-                  hover:[&::-moz-range-thumb]:bg-blue-400
-                  [&::-moz-range-thumb]:border-0
-                  [&::-moz-range-thumb]:transition-all
-                  [&::-moz-range-thumb]:cursor-pointer
-                  [&::-moz-range-progress]:bg-blue-500
-                  [&::-moz-range-progress]:rounded-lg
-                  [&::-moz-range-track]:rounded-lg"
+                  max={trackDurations[currentTrack] || 0}
+                  value={currentTime}
+                  onChange={handleProgressChange}
+                  className="w-full progress--range__slider"
+                  style={{
+                    backgroundImage: `linear-gradient(to right, #fff ${
+                      (currentTime / (trackDurations[currentTrack] || 1)) * 100
+                    }%, #1B1B1B ${
+                      (currentTime / (trackDurations[currentTrack] || 1)) * 100
+                    }%)`,
+                  }}
                 />
+                {/* <span className="text-white w-10 [min-width:2.5rem] text-right">
+                  {formatTime(trackDurations[currentTrack] || 0)}
+                </span> */}
+              </div>
+
+              <div className="flex gap-4 justify-between">
+                <div className="flex justify-between items-center">
+                  <div>
+                    <h3 className="text-white font-semibold">
+                      {audioList[currentTrack].name}
+                    </h3>
+                    <p className="text-gray-300">
+                      {audioList[currentTrack].artist}
+                    </p>
+                  </div>
+                </div>
+                <div className="flex justify-center items-center gap-6">
+                  <BackwardIcon
+                    className="text-white w-6 h-6 cursor-pointer"
+                    onClick={playPrev}
+                  />
+                  <div
+                    className="p-3 rounded-full cursor-pointer"
+                    onClick={() => togglePlay(currentTrack)}
+                  >
+                    {isPlaying ? (
+                      <PauseIcon className="text-white w-9 h-9" />
+                    ) : (
+                      <PlayIcon className="text-white w-9 h-9" />
+                    )}
+                  </div>
+                  <ForwardIcon
+                    className="text-white w-6 h-6 cursor-pointer"
+                    onClick={playNext}
+                  />
+                </div>
+                <div className="flex items-center gap-4">
+                  <SpeakerWaveIcon className="text-white w-5 h-5" />
+                  <input
+                    type="range"
+                    min="0"
+                    max="1"
+                    step="0.1"
+                    value={volume}
+                    onChange={(e) => setVolume(parseFloat(e.target.value))}
+                    className="w-24 h-1 bg-gray-600 rounded-lg appearance-none cursor-pointer volume--range__slider"
+                    style={{
+                      backgroundImage: `linear-gradient(to right, #fff ${
+                        volume * 100
+                      }%, #1B1B1B ${volume * 100}%)`,
+                    }}
+                  />
+                </div>
               </div>
             </div>
           </div>
