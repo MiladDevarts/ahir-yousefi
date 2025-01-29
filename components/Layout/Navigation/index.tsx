@@ -27,7 +27,7 @@ const Navigation = () => {
   return (
     <nav
       data-aos="fade-down"
-      className="container flex justify-between items-center lg:items-start py-6 lg:py-12"
+      className="container flex justify-between items-center lg:items-start py-6 lg:py-12 overflow-hidden"
     >
       <Logo />
       <span className="inline-flex lg:hidden">

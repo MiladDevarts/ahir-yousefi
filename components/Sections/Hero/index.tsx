@@ -38,7 +38,7 @@ const Hero = () => {
         </span>
       </div>
 
-      <div className="flex gap-x-2 justify-end mt-10">
+      <div className="flex gap-x-2 justify-end mt-10 overflow-hidden">
         <Link
           data-aos="zoom-out"
           data-aos-delay="100"

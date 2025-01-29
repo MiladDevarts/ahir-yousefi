@@ -66,26 +66,27 @@ const Gallery = () => {
   }, []);
 
   return (
-    <section className="container my-44">
-      <h2 className="mb-8 font-display font-bold text-[40px]">Gallery</h2>
-      <div className="grid grid-cols-3 lg:grid-cols-12 grid-rows-2 lg:grid-rows-1 gap-x-7 gap-y-6">
-        {galleryItems.map((item, index) => (
-          <GalleryItem
-            key={index}
-            imageUrl={item.imageUrl}
-            animation={item.animation}
-            className={item.className}
-            onClick={() => setSelectedImage(item.imageUrl)}
-          />
-        ))}
-      </div>
-
-      <ImageModal
-        isOpen={!!selectedImage}
-        imageUrl={selectedImage || ""}
-        onClose={() => setSelectedImage(null)}
-      />
-    </section>
+    <div className="overflow-hidden">
+      <section className="container my-44">
+        <h2 className="mb-8 font-display font-bold text-[40px]">Gallery</h2>
+        <div className="grid grid-cols-3 lg:grid-cols-12 grid-rows-2 lg:grid-rows-1 gap-x-7 gap-y-6">
+          {galleryItems.map((item, index) => (
+            <GalleryItem
+              key={index}
+              imageUrl={item.imageUrl}
+              animation={item.animation}
+              className={item.className}
+              onClick={() => setSelectedImage(item.imageUrl)}
+            />
+          ))}
+        </div>
+        <ImageModal
+          isOpen={!!selectedImage}
+          imageUrl={selectedImage || ""}
+          onClose={() => setSelectedImage(null)}
+        />
+      </section>
+    </div>
   );
 };
 

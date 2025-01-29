@@ -113,8 +113,8 @@ const MusicPlayer = () => {
   };
 
   return (
-    <section className="container flex flex-col lg:flex-row gap-x-20 gap-y-10 my-44">
-      <div className="w-full lg:w-1/2 h-[400px] lg:h-[700px]">
+    <section className="container flex flex-col lg:flex-row gap-x-20 lg:gap-y-10 my-44">
+      <div className="w-full lg:w-1/2 h-[400px] lg:h-[700px] z-[2]">
         <div className="relative flex flex-col gap-y-5 h-full">
           <div className="flex flex-col gap-2 mb-[60px]">
             <div className="flex gap-3 items-center">
@@ -172,9 +172,9 @@ const MusicPlayer = () => {
           </div>
 
           {/* Player Controls */}
-          <div className="w-full bg-[#1B1B1B] bg-opacity-50 backdrop-blur-md p-6 rounded-[15px] absolute bottom-0 left-0">
+          <div className="w-full bg-[#1B1B1B] bg-opacity-50 backdrop-blur-md p-6 rounded-t-[15px] lg:rounded-[15px] absolute bottom-0 left-0">
             <div className="flex flex-col gap-4">
-              <div className="flex items-center gap-4 absolute bottom-0 left-5 right-5">
+              <div className="flex items-center gap-4 absolute bottom-0 left-0 lg:left-5 right-0 lg:right-5">
                 {/* <span className="text-white w-10 [min-width:2.5rem]">
                   {formatTime(currentTime)}
                 </span> */}
@@ -198,7 +198,7 @@ const MusicPlayer = () => {
                 </span> */}
               </div>
 
-              <div className="flex gap-4 justify-between">
+              <div className="flex gap-4 justify-between flex-wrap lg:flex-nowrap">
                 <div className="flex justify-between items-center">
                   <div>
                     <h3 className="text-white font-semibold">
@@ -209,7 +209,7 @@ const MusicPlayer = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex justify-center items-center gap-6">
+                <div className="flex justify-center items-center gap-6 order-last w-full lg:w-auto lg:order-none">
                   <BackwardIcon
                     className="text-white w-6 h-6 cursor-pointer"
                     onClick={playPrev}
@@ -252,8 +252,17 @@ const MusicPlayer = () => {
         </div>
       </div>
 
+      <div className="bg-[#1B1B1B] bg-opacity-50 lg:bg-transparent pt-8 rounded-b-3xl lg:rounded-b-none h-full lg:hidden">
+        <div
+          className="w-full lg:w-[40%] h-[400px] lg:h-[700px] bg-center bg-cover rounded-[24px] relative"
+          style={{
+            backgroundImage: `url('/images/music-player/background.jpg')`,
+          }}
+        ></div>
+      </div>
+
       <div
-        className="w-full lg:w-[40%] h-[400px] lg:h-[700px] bg-center bg-cover rounded-[24px] relative"
+        className="hidden lg:block w-full lg:w-[40%] h-[400px] lg:h-[700px] bg-center bg-cover rounded-[24px] relative"
         style={{
           backgroundImage: `url('/images/music-player/background.jpg')`,
         }}
