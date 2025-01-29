@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 
 import Card from "./Card";
 
@@ -10,9 +9,6 @@ const index = () => {
         <h2 className="text-white text-2xl font-bold lg:text-4xl mb-11">
           New Tracks
         </h2>
-        {/* <Link className='tetx-[#CBCBCB] font-light' href={"#"}>
-          View all
-        </Link> */}
       </div>
       <div className="w-full flex flex-col gap-y-6 lg:grid lg:grid-cols-3 lg:gap-x-4 ">
         <Card

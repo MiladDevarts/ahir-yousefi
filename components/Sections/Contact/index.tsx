@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "next/link";
 
-import Instagram from "../Icons/White/Instagram";
-import Facebook from "../Icons/White/Facebook";
-import TikTok from "../Icons/White/TikTok";
+import Instagram from "../../UI/Icons/White/Instagram";
+import Facebook from "../../UI/Icons/White/Facebook";
+import TikTok from "../../UI/Icons/White/TikTok";
 
 const Contact = () => {
   return (

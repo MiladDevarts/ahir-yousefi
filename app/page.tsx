@@ -1,31 +1,31 @@
 "use client";
 
-import { useContext } from "react";
+import Header from "@layout/Header";
 
-import Biography from "@/components/Bioghraphy";
-import Footer from "@/components/Layout/Footer";
-import Gallery from "@/components/Sections/Gallery";
-import Header from "@/components/Layout/Header";
-import NewTracks from "@/components/Sections/Tracks";
-import Partners from "@/components/Sections/Brands";
-import SocialActivity from "@/components/Sections/SocialActivity";
-import Contact from "@/components/Sections/Contact";
-import LatestMusicVideo from "@/components/Sections/MusicVideo";
-import MusicPlayer from "@/components/Sections/MusicPlayer";
-import LatestAlbum from "@/components/Sections/Album";
+import Biography from "@sections/Bioghraphy";
+import Tracks from "@sections/Tracks";
+import SocialActivity from "@sections/SocialActivity";
+import Gallery from "@sections/Gallery";
+import MusicPlayer from "@sections/MusicPlayer";
+import Album from "@sections/Album";
+import MusicVideo from "@sections/MusicVideo";
+import Brands from "@sections/Brands";
+import Contact from "@sections/Contact";
+
+import Footer from "@layout/Footer";
 
 export default function Home() {
   return (
     <main>
       <Header />
       <Biography />
-      <LatestAlbum />
-      <NewTracks />
+      <Album />
+      <Tracks />
       <SocialActivity />
       <MusicPlayer />
       <Gallery />
-      <LatestMusicVideo />
-      <Partners />
+      <MusicVideo />
+      <Brands />
       <Contact />
       <Footer />
     </main>

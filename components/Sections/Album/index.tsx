@@ -3,9 +3,9 @@ import Link from "next/link";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { AppleMusic, Play } from "../../Icons";
+import { AppleMusic, Play } from "../../UI/Icons";
 
-const LatestAlbum = () => {
+const Album = () => {
   useEffect(() => {
     Aos.init({
       easing: "ease-out-cubic",
@@ -842,4 +842,4 @@ const LatestAlbum = () => {
   );
 };
 
-export default LatestAlbum;
+export default Album;

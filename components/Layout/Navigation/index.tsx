@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import Link from "next/link";
 
 import Logo from "../Logo";
-import { Facebook, Instagram, TikTok, Twitter } from "@/components/Icons";
+import { Facebook, Instagram, TikTok, Twitter } from "@/components/UI/Icons";
 
 import Aos from "aos";
 import "aos/dist/aos.css";

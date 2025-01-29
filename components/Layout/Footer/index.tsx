@@ -4,7 +4,7 @@ import {
   Spotify,
   Telegram,
   Youtube,
-} from "../../Icons";
+} from "../../UI/Icons";
 import Link from "next/link";
 
 import { socialMedia } from "@/app/config";
@@ -41,7 +41,6 @@ const Footer = () => {
       </footer>
       <footer className="flex lg:hidden w-full bg-white text-black py-6">
         <div className="container my-4 flex flex-col lg:flex-row items-center lg: justify-between gap-y-10">
-        
           <div className="flex items-center gap-x-7">
             <Link href={socialMedia.spotify}>
               <Spotify />
