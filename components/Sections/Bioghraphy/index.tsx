@@ -25,7 +25,7 @@ const Biography = () => {
 
   return (
     <section
-      id="biography"
+      id="bio"
       className="container mt-10 mb-16 lg:my-44 overflow-hidden"
     >
       <div className="flex flex-col lg:items-center lg:flex-row gap-y-4 lg:gap-x-8">

@@ -59,7 +59,7 @@ const Brands = () => {
   }, []);
 
   return (
-    <section className="container mb-28 overflow-hidden">
+    <section id="brands" className="container mb-28 overflow-hidden">
       <div className="rounded-b-[30px] flex flex-col py-28  items-center w-full h-full  bg-gradient-to-t from-[#191919] to-[#111111]">
         <h2 className="text-center text-2xl font-display font-bold mb-10">
           My Brands

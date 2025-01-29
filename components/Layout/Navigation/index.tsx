@@ -42,11 +42,16 @@ const Navigation = () => {
         </svg>
       </span>
       <div className="hidden lg:flex gap-x-6">
-        <div className="flex flex-col gap-y-5">
-          <Link href={"#biography"}>Biography</Link>
-          <Link href={"#album"}>Album</Link>
-          <Link href={"#tracks"}>Tracks</Link>
-          <Link href={"#contact"}>Contact</Link>
+        <div className="flex flex-col gap-3">
+          {NavigationItems.map((item) => (
+            <Link
+              key={item.target}
+              href={item.target}
+              className="text-white hover:text-white/80 transition-colors"
+            >
+              {item.title}
+            </Link>
+          ))}
         </div>
         <div className="flex gap-x-7">
           <Link href={socialMedia.instagram}>

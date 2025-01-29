@@ -19,7 +19,7 @@ const MusicVideo = () => {
   }, []);
 
   return (
-    <section id="music_videos" className="w-full bg-[#1D1D1D]">
+    <section id="music_video" className="w-full bg-[#1D1D1D]">
       <div className="container flex justify-between pt-6 mb-4 mt-16">
         <div className="flex flex-col mt-6">
           <h5 className="flex items-center gap-x-3 text-[#505050] text-base lg:text-lg">

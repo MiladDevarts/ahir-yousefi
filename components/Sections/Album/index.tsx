@@ -32,7 +32,7 @@ const Album = () => {
   return (
     <>
       <section
-        id="album"
+        id="new_album"
         data-aos="fade-up"
         className="flex flex-col justify-between w-full min-h-[660px] mt-16 mb-20 lg:my-40 bg-no-repeat bg-cover bg-center pb-11 overflow-hidden"
         style={{ backgroundImage: `url('/images/home/album.jpg')` }}

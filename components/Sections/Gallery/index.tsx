@@ -66,7 +66,7 @@ const Gallery = () => {
   }, []);
 
   return (
-    <div className="overflow-hidden my-44">
+    <div id="gallery" className="overflow-hidden my-44">
       <section className="container">
         <h2 className="mb-8 font-display font-bold text-[40px]">Gallery</h2>
         <div className="grid grid-cols-3 lg:grid-cols-12 grid-rows-2 lg:grid-rows-1 gap-x-7 gap-y-6">

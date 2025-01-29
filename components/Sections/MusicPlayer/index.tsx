@@ -113,7 +113,10 @@ const MusicPlayer = () => {
   };
 
   return (
-    <section className="container flex flex-col lg:flex-row gap-x-20 lg:gap-y-10 my-44">
+    <section
+      id="music_player"
+      className="container flex flex-col lg:flex-row gap-x-20 lg:gap-y-10 my-44"
+    >
       <div className="w-full lg:w-1/2 h-[400px] lg:h-[700px] z-[2]">
         <div className="relative flex flex-col gap-y-5 h-full">
           <div className="flex flex-col gap-2 mb-[60px]">

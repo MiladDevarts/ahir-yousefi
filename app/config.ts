@@ -22,7 +22,7 @@ export const NavigationItems = [
   { title: "Home", target: "#home" },
   { title: "Bio", target: "#bio" },
   { title: "New Album ", target: "#new_album" },
-  { title: "New Tracks", target: "#new_tracks" },
+  { title: "New Tracks", target: "#tracks" },
   { title: "Music Player", target: "#music_player" },
   { title: "Gallery", target: "#gallery" },
   { title: "Contact", target: "#contact" },
