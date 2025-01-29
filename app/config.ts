@@ -10,6 +10,10 @@ export const socialMedia = {
   instagram: "https://www.instagram.com/p91.official/",
 } as const;
 
+export const video = {
+  youtube: "https://www.youtube.com/@PooriyaAriyan",
+} as const;
+
 export const GenralInfo = {
   new_release: "04/11/2025",
 } as const;

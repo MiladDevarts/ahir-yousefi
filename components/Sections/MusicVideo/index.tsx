@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
+import { video } from "@/config";
 
 const MusicVideo = () => {
   useEffect(() => {
@@ -32,7 +34,7 @@ const MusicVideo = () => {
             </svg>
             Watch New Music video directly here
           </h5>
-          <h2 className="font-mono my-3 text-3xl pl-10">Baghalam kon</h2>
+          <h2 className="font-display text-[32px] my-3 pl-10">Labkhand</h2>
         </div>
         <svg
           className="mt-10"
@@ -57,12 +59,14 @@ const MusicVideo = () => {
           </defs>
         </svg>
       </div>
-      <div className="container h-[400px] lg:h-[700px]">
-        <div
-          className="w-full h-full bg-center bg-cover rounded-t-[32px]"
-          style={{ backgroundImage: `url('/images/thumbnails/video/1.jpg')` }}
-        ></div>
-      </div>
+      <Link href={video.youtube}>
+        <div className="container h-[400px] lg:h-[700px]">
+          <div
+            className="w-full h-full bg-center bg-cover rounded-t-[32px]"
+            style={{ backgroundImage: `url('/images/thumbnails/video/1.jpg')` }}
+          ></div>
+        </div>
+      </Link>
     </section>
   );
 };
