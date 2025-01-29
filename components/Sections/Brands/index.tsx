@@ -60,9 +60,11 @@ const Brands = () => {
   }, []);
 
   return (
-    <section className="container my-28">
-      <h2 className="text-center text-4xl font-mono mb-10">My Brands</h2>
-      <div className="rounded-[30px] flex py-28 justify-center items-center w-full h-full border border-[#313131] bg-gradient-to-t from-[#191919] to-[#111111]">
+    <section className="container mb-28">
+      <div className="rounded-b-[30px] flex flex-col py-28  items-center w-full h-full  bg-gradient-to-t from-[#191919] to-[#111111]">
+        <h2 className="text-center text-2xl font-display font-bold mb-10">
+          My Brands
+        </h2>
         <div className="flex flex-col items-center gap-y-10 lg:flex-row lg:gap-x-20">
           {brands.map((brand) => (
             <BrandLink key={brand.url} brand={brand} />
