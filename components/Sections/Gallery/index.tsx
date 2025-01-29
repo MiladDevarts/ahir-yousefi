@@ -19,14 +19,18 @@ const GalleryItem = ({
   className,
   onClick,
 }: GalleryItemProps) => (
-  <motion.div
+  <div
     data-aos={animation}
     data-aos-duration="1000"
-    className={`rounded-[30px] w-full h-[250px] lg:h-[350px] bg-cover bg-center cursor-pointer hover:scale-[1.02] transition-transform ${className}`}
-    style={{ backgroundImage: `url('${imageUrl}')` }}
-    onClick={onClick}
-    layoutId={`gallery-image-${imageUrl}`}
-  />
+    className={`w-full ${className}`}
+  >
+    <motion.div
+      className={`rounded-[30px] h-[250px] lg:h-[350px] bg-cover bg-center cursor-pointer hover:scale-[1.02]`}
+      style={{ backgroundImage: `url('${imageUrl}')` }}
+      onClick={onClick}
+      layoutId={`gallery-image-${imageUrl}`}
+    />
+  </div>
 );
 
 const galleryItems = [
@@ -46,7 +50,7 @@ const galleryItems = [
     imageUrl: "/images/gallery/3.jpg",
     animation: "fade-left" as const,
     className:
-      "row-start-2 row-end-3 col-start-1 col-end-2 lg:row-start-1 lg:row-end-2 lg:col-start-10 lg:col-end-13",
+      "row-start-2 row-end-3 col-span-full lg:row-start-1 lg:row-end-2 lg:col-start-10 lg:col-end-13",
   },
 ];
 

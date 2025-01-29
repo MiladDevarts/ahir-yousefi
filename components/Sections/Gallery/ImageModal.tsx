@@ -26,7 +26,7 @@ const ImageModal = ({ isOpen, imageUrl, onClose }: ImageModalProps) => {
             initial={{ scale: 0.9, opacity: 0, y: 20 }}
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.9, opacity: 0, y: 20 }}
-            transition={{ type: "spring", duration: 0.5 }}
+            transition={{ type: "spring", duration: 0.1 }}
             className="relative max-w-5xl w-full bg-transparent"
             onClick={(e) => e.stopPropagation()}
           >
@@ -40,7 +40,7 @@ const ImageModal = ({ isOpen, imageUrl, onClose }: ImageModalProps) => {
             <motion.img
               src={imageUrl}
               alt="Gallery image"
-              className="w-full h-auto rounded-2xl"
+              className="w-full h-auto max-h-[80vh] object-cover object-center rounded-2xl"
               layoutId={`gallery-image-${imageUrl}`}
             />
           </motion.div>

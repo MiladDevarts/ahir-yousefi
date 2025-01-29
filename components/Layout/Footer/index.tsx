@@ -6,7 +6,7 @@ import { socialMedia } from "@/config";
 const Footer = () => {
   return (
     <>
-      <footer className="hidden lg:flex w-full bg-white text-black h-[100px]">
+      <footer className="hidden lg:flex w-full bg-white text-black min-h-[100px]">
         <div className="container my-4 flex flex-col lg:flex-row items-center lg: justify-between gap-y-10">
           <div className="flex items-center gap-x-7">
             <Link href={"#"}>
@@ -33,7 +33,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <footer className="flex lg:hidden w-full bg-white text-black h-[100px]">
+      <footer className="flex lg:hidden w-full bg-white text-black min-h-[100px]">
         <div className="container my-4 flex flex-col lg:flex-row items-center lg: justify-between gap-y-10">
           <div className="flex items-center gap-x-7">
             <Link href={socialMedia.spotify}>
