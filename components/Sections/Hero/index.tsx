@@ -18,6 +18,8 @@ import { socialMedia, GenralInfo } from "@/config";
 
 import Typo from "@public/images/header/p91-typo.png";
 
+import BlackPlay from "@public/images/header/black-play.png";
+
 const Hero = () => {
   useEffect(() => {
     Aos.init({
@@ -40,6 +42,14 @@ const Hero = () => {
         <span className="text-white font-semibold">
           {GenralInfo.new_release}
         </span>
+      </div>
+
+      <div className="hidden lg:flex gap-14 items-center">
+        <ul className="leading-8 ">
+          <li>Artist</li>
+          <li>Composer</li>
+        </ul>
+        <Image src={BlackPlay} width={100} alt={""} />
       </div>
 
       <div className="flex gap-4 lg:flex-row flex-col items-end justify-end lg:items-center">
