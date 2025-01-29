@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-import { Inter } from "next/font/google";
-import localFont from "next/font/local";
+import { Inter, Vazirmatn } from "next/font/google";
+
 import SmoothScrollProvider from "@components/Providers/SmoothScrollProvider";
 
 const inter = Inter({
@@ -10,19 +10,14 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-const azonix = localFont({
-  src: [
-    {
-      path: "../public/fonts/Azonix.otf",
-      weight: "400",
-    },
-  ],
-  variable: "--font-azonix",
+const vazirmatn = Vazirmatn({
+  subsets: ["arabic"],
+  variable: "--font-vazirmatn",
 });
 
 export const metadata: Metadata = {
   title: "P91 — Poorya Arian",
-  description: "Singer",
+  description: "Singer...",
 };
 
 export default function RootLayout({
@@ -31,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${azonix.variable} ${inter.variable}`}>
+    <html lang="en" className={`${vazirmatn.variable} ${inter.variable}`}>
       <body>
         <SmoothScrollProvider>{children}</SmoothScrollProvider>
       </body>

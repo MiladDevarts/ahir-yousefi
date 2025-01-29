@@ -30,7 +30,7 @@ const Biography = () => {
           <h2
             data-aos="zoom-out-right"
             data-aos-delay="400"
-            className="text-white font-mono text-3xl lg:text-[64px] mb-8 mt-12"
+            className="text-white font-display text-3xl lg:text-[64px] mb-8 mt-12"
           >
             BIO
           </h2>
