@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Button from "../Elements/buttons";
 
 interface NewTrackProps {
   image: string;
@@ -21,12 +22,7 @@ const Card: React.FC<NewTrackProps> = (props) => {
           Release Date : {props.release_date}
         </span>
       </div>
-      <Link
-        href={props.url}
-        className="rounded-2xl inline-block w-[150px] bg-white border border-white px-5 py-1 text-black text-center hover:bg-white/0 hover:text-white transition-colors "
-      >
-        Listen now
-      </Link>
+      <Button label={"Listen Now"} href={props.url} />
     </div>
   );
 };
