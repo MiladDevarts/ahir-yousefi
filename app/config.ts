@@ -13,3 +13,5 @@ export const socialMedia = {
 export const GenralInfo = {
   new_release: "04/11/2025",
 } as const;
+
+export const NavigationItems = [{ title: "home", target: "#" }] as const;

@@ -9,7 +9,7 @@ import { Facebook, Instagram, TikTok, Twitter } from "@/components/Icons";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-import { socialMedia } from "@/app/config";
+import { socialMedia, NavigationItems } from "@/app/config";
 
 const Navigation = () => {
   useEffect(() => {
@@ -43,9 +43,7 @@ const Navigation = () => {
       </span>
       <div className="hidden lg:flex gap-x-6">
         <div className="flex flex-col gap-y-5">
-          <Link href={"#biography"} className="flex items-center gap-x-2">
-            Biography
-          </Link>
+          <Link href={"#biography"}>Biography</Link>
           <Link href={"#album"}>Album</Link>
           <Link href={"#tracks"}>Tracks</Link>
           <Link href={"#contact"}>Contact</Link>
