@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 import React, { useEffect } from "react";
 import Link from "next/link";
 
@@ -13,6 +15,8 @@ import Youtube from "@ui/Icons/Youtube";
 import Telegram from "@ui/Icons/Telegram";
 
 import { socialMedia, GenralInfo } from "@/config";
+
+import Typo from "@public/images/header/p91-typo.png";
 
 const Hero = () => {
   useEffect(() => {
@@ -38,12 +42,13 @@ const Hero = () => {
         </span>
       </div>
 
-      <div className="flex gap-x-2 justify-end mt-10 overflow-hidden">
+      <div className="flex gap-3 justify-end items-center mt-10 overflow-hidden">
+        <Image src={Typo} alt="p91" className="mr-4" width={100} />
         <Link
           data-aos="zoom-out"
           data-aos-delay="100"
           href={socialMedia.spotify}
-          className="flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full"
+          className="flex justify-center items-center w-16 h-16 bg-[#545454]/10 backdrop-blur-lg rounded-full"
         >
           <Spotidy color="white" />
         </Link>
@@ -51,7 +56,7 @@ const Hero = () => {
           data-aos="zoom-out"
           data-aos-delay="200"
           href={socialMedia.sound_cloud}
-          className="flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full"
+          className="flex justify-center items-center w-16 h-16 bg-[#545454]/10 backdrop-blur-lg rounded-full"
         >
           <Soundcloud color="white" />
         </Link>
@@ -59,7 +64,7 @@ const Hero = () => {
           data-aos="zoom-out"
           data-aos-delay="300"
           href={socialMedia.apple_music}
-          className="flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full"
+          className="flex justify-center items-center w-16 h-16 bg-[#545454]/10 backdrop-blur-lg rounded-full"
         >
           <AppleMusic color="white" />
         </Link>
@@ -67,7 +72,7 @@ const Hero = () => {
           data-aos="zoom-out"
           data-aos-delay="400"
           href={socialMedia.youtube}
-          className="flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full"
+          className="flex justify-center items-center w-16 h-16 bg-[#545454]/10 backdrop-blur-lg rounded-full"
         >
           <Youtube color="white" />
         </Link>
@@ -75,7 +80,7 @@ const Hero = () => {
           data-aos="zoom-out"
           data-aos-delay="500"
           href={socialMedia.telegram}
-          className="flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full"
+          className="flex justify-center items-center w-16 h-16 bg-[#545454]/10 backdrop-blur-lg rounded-full"
         >
           <Telegram color="white" />
         </Link>
