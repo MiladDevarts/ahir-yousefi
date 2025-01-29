@@ -1,14 +1,14 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-
 import Input from "@common/Input";
 import Textarea from "@common/Textarea";
 import User from "@components/UI/Icons/White/User";
 import Email from "@components/UI/Icons/White/Email";
 
 const Contact = () => {
+  const formRef = useRef<HTMLFormElement>(null);
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
@@ -16,18 +16,18 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    const form = e.currentTarget;
+    if (!formRef.current) return;
 
     try {
       await emailjs.sendForm(
         "YOUR_SERVICE_ID",
         "YOUR_TEMPLATE_ID",
-        form,
+        formRef.current,
         "YOUR_PUBLIC_KEY"
       );
 
       setSubmitted(true);
-      form.reset();
+      formRef.current.reset();
     } catch (error) {
       console.error("Failed to send email:", error);
     } finally {
@@ -48,6 +48,7 @@ const Contact = () => {
         </div>
       ) : (
         <form
+          ref={formRef}
           onSubmit={handleSubmit}
           className="flex flex-col gap-y-6 w-full lg:w-1/2"
         >
