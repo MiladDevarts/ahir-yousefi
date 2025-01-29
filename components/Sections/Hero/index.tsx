@@ -42,48 +42,51 @@ const Hero = () => {
         </span>
       </div>
 
-      <div className="flex gap-3 justify-end items-center mt-10 overflow-hidden">
-        <Image src={Typo} alt="p91" className="mr-4" width={100} />
-        <Link
-          data-aos="zoom-out"
-          data-aos-delay="100"
-          href={socialMedia.spotify}
-          className="flex justify-center items-center w-16 h-16 bg-[#545454]/10 backdrop-blur-lg rounded-full"
-        >
-          <Spotidy color="white" />
-        </Link>
-        <Link
-          data-aos="zoom-out"
-          data-aos-delay="200"
-          href={socialMedia.sound_cloud}
-          className="flex justify-center items-center w-16 h-16 bg-[#545454]/10 backdrop-blur-lg rounded-full"
-        >
-          <Soundcloud color="white" />
-        </Link>
-        <Link
-          data-aos="zoom-out"
-          data-aos-delay="300"
-          href={socialMedia.apple_music}
-          className="flex justify-center items-center w-16 h-16 bg-[#545454]/10 backdrop-blur-lg rounded-full"
-        >
-          <AppleMusic color="white" />
-        </Link>
-        <Link
-          data-aos="zoom-out"
-          data-aos-delay="400"
-          href={socialMedia.youtube}
-          className="flex justify-center items-center w-16 h-16 bg-[#545454]/10 backdrop-blur-lg rounded-full"
-        >
-          <Youtube color="white" />
-        </Link>
-        <Link
-          data-aos="zoom-out"
-          data-aos-delay="500"
-          href={socialMedia.telegram}
-          className="flex justify-center items-center w-16 h-16 bg-[#545454]/10 backdrop-blur-lg rounded-full"
-        >
-          <Telegram color="white" />
-        </Link>
+      <div className="flex gap-4 lg:flex-row flex-col items-end lg:items-center">
+        <Image src={Typo} alt="p91" className="" width={100} />
+
+        <div className="flex gap-3 justify-end items-center mt-10 overflow-hidden">
+          <Link
+            data-aos="zoom-out"
+            data-aos-delay="100"
+            href={socialMedia.spotify}
+            className="flex justify-center items-center w-16 h-16 bg-[#545454]/10 backdrop-blur-lg rounded-full"
+          >
+            <Spotidy color="white" />
+          </Link>
+          <Link
+            data-aos="zoom-out"
+            data-aos-delay="200"
+            href={socialMedia.sound_cloud}
+            className="flex justify-center items-center w-16 h-16 bg-[#545454]/10 backdrop-blur-lg rounded-full"
+          >
+            <Soundcloud color="white" />
+          </Link>
+          <Link
+            data-aos="zoom-out"
+            data-aos-delay="300"
+            href={socialMedia.apple_music}
+            className="flex justify-center items-center w-16 h-16 bg-[#545454]/10 backdrop-blur-lg rounded-full"
+          >
+            <AppleMusic color="white" />
+          </Link>
+          <Link
+            data-aos="zoom-out"
+            data-aos-delay="400"
+            href={socialMedia.youtube}
+            className="flex justify-center items-center w-16 h-16 bg-[#545454]/10 backdrop-blur-lg rounded-full"
+          >
+            <Youtube color="white" />
+          </Link>
+          <Link
+            data-aos="zoom-out"
+            data-aos-delay="500"
+            href={socialMedia.telegram}
+            className="flex justify-center items-center w-16 h-16 bg-[#545454]/10 backdrop-blur-lg rounded-full"
+          >
+            <Telegram color="white" />
+          </Link>
+        </div>
       </div>
     </section>
   );
