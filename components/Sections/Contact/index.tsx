@@ -1,11 +1,19 @@
 "use client";
 
 import React, { useRef, useState } from "react";
+import Link from "next/link";
+
 import emailjs from "@emailjs/browser";
+
 import Input from "@common/Input";
 import Textarea from "@common/Textarea";
+
 import User from "@components/UI/Icons/White/User";
 import Email from "@components/UI/Icons/White/Email";
+
+import { Instagram, TikTok } from "@components/UI/Icons";
+
+import { socialMedia } from "@/config";
 
 const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -38,9 +46,11 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="container flex flex-col gap-y-6 items-center my-36"
+      className="container flex flex-col gap-y-6 items-center my-28"
     >
-      <h2 className="text-3xl font-mono text-white mb-6">Contact</h2>
+      <h2 className="text-4xl font-display text-white mb-6 uppercase font-bold">
+        Contact
+      </h2>
 
       {submitted ? (
         <div className="text-green-500 text-center">
@@ -87,6 +97,28 @@ const Contact = () => {
           </button>
         </form>
       )}
+      <div className="flex flex-col items-center gap-6 mt-[20px] mb-[80px]">
+        <div className="flex gap-8">
+          <span className="text-[#939393]">Or send email to</span>
+          <Link className="text-white" href={"mailto:info@p91.bio"}>
+            info@p91.bio
+          </Link>
+        </div>
+        <div className="flex gap-4">
+          <Link href={socialMedia.instagram}>
+            <Instagram />
+          </Link>
+          <Link href={socialMedia.tiktok}>
+            <TikTok />
+          </Link>
+        </div>
+      </div>
+      <div>
+        <span className="text-[#939393]">Design by </span>
+        <Link className="text-white" href={"https://rivdesign.se"}>
+          Riv Design
+        </Link>
+      </div>
     </section>
   );
 };
