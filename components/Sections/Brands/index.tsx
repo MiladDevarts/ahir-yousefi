@@ -18,7 +18,7 @@ const brands: BrandItem[] = [
   {
     name: "Kneat",
     url: "https://rivdesign.se",
-    imageUrl: "/images/barnds/kneat.svg",
+    imageUrl: "/images/brands/kneat.svg",
     width: 144, // w-36
     delay: 200,
   },
