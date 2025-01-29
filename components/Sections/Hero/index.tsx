@@ -42,9 +42,8 @@ const Hero = () => {
         </span>
       </div>
 
-      <div className="flex gap-4 lg:flex-row flex-col items-end lg:items-center">
+      <div className="flex gap-4 lg:flex-row flex-col items-end justify-end lg:items-center">
         <Image src={Typo} alt="p91" className="" width={100} />
-
         <div className="flex gap-3 justify-end items-center mt-10 overflow-hidden">
           <Link
             data-aos="zoom-out"
