@@ -22,6 +22,7 @@ const Card: React.FC<NewTrackProps> = (props) => {
           Release Date : {props.release_date}
         </span>
       </div>
+
       <Button label={"Listen Now"} href={props.url} />
     </div>
   );
