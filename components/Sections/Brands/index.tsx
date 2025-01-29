@@ -16,9 +16,9 @@ interface BrandItem {
 
 const brands: BrandItem[] = [
   {
-    name: "Riv Design",
+    name: "Kneat",
     url: "https://rivdesign.se",
-    imageUrl: "/images/partners/riv.png",
+    imageUrl: "/images/barnds/kneat.svg",
     width: 144, // w-36
     delay: 200,
   },
@@ -41,7 +41,6 @@ const BrandLink = ({ brand }: { brand: BrandItem }) => (
   >
     <Image
       src={brand.imageUrl}
-      className={`w-${brand.width / 4}`}
       alt={brand.name}
       width={brand.width}
       height={brand.width}
