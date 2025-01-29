@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { AppleMusic, Play } from "../Icons";
+import { AppleMusic, Play } from "../../Icons";
 
 const LatestAlbum = () => {
   useEffect(() => {
@@ -181,9 +181,7 @@ const LatestAlbum = () => {
             data-aos-delay="300"
             className="hidden lg:flex flex-col"
           >
-            <div className="mb-6">
-              
-            </div>
+            <div className="mb-6"></div>
             <div className="flex gap-x-4 items-center">
               <span>Or</span>
               <svg
