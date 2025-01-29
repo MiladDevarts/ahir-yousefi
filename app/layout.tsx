@@ -5,14 +5,16 @@ import { Inter, Vazirmatn } from "next/font/google";
 
 import SmoothScrollProvider from "@components/Providers/SmoothScrollProvider";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
-
+// Display
 const vazirmatn = Vazirmatn({
   subsets: ["arabic"],
   variable: "--font-vazirmatn",
+});
+
+// Inter
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
