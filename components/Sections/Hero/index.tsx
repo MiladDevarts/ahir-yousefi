@@ -6,11 +6,11 @@ import Link from "next/link";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-import Spotidy from "@ui/Icons/White/Spotify";
-import Soundcloud from "@ui/Icons/White/Soundcloud";
-import AppleMusic from "@ui/Icons/White/AppleMusic";
-import Youtube from "@ui/Icons/White/Youtube";
-import Telegram from "@ui/Icons/White/Telegram";
+import Spotidy from "@ui/Icons/Spotify";
+import Soundcloud from "@ui/Icons/Soundcloud";
+import AppleMusic from "@ui/Icons/AppleMusic";
+import Youtube from "@ui/Icons/Youtube";
+import Telegram from "@ui/Icons/Telegram";
 
 import { socialMedia, GenralInfo } from "@/config";
 
@@ -45,7 +45,7 @@ const Hero = () => {
           href={socialMedia.spotify}
           className="flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full"
         >
-          <Spotidy />
+          <Spotidy color="white" />
         </Link>
         <Link
           data-aos="zoom-out"
@@ -53,7 +53,7 @@ const Hero = () => {
           href={socialMedia.sound_cloud}
           className="flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full"
         >
-          <Soundcloud />
+          <Soundcloud color="white" />
         </Link>
         <Link
           data-aos="zoom-out"
@@ -61,7 +61,7 @@ const Hero = () => {
           href={socialMedia.apple_music}
           className="flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full"
         >
-          <AppleMusic />
+          <AppleMusic color="white" />
         </Link>
         <Link
           data-aos="zoom-out"
@@ -69,7 +69,7 @@ const Hero = () => {
           href={socialMedia.youtube}
           className="flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full"
         >
-          <Youtube />
+          <Youtube color="white" />
         </Link>
         <Link
           data-aos="zoom-out"
@@ -77,7 +77,7 @@ const Hero = () => {
           href={socialMedia.telegram}
           className="flex justify-center items-center w-20 h-20 bg-[#545454]/10 backdrop-blur-lg rounded-full"
         >
-          <Telegram />
+          <Telegram color="white" />
         </Link>
       </div>
     </section>

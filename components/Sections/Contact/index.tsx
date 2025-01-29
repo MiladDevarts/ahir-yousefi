@@ -8,8 +8,8 @@ import emailjs from "@emailjs/browser";
 import Input from "@common/Input";
 import Textarea from "@common/Textarea";
 
-import User from "@components/UI/Icons/White/User";
-import Email from "@components/UI/Icons/White/Email";
+import User from "@components/UI/Icons/User";
+import Email from "@components/UI/Icons/Email";
 
 import { Instagram, TikTok } from "@components/UI/Icons";
 

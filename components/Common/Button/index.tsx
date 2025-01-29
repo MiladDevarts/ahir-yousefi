@@ -1,13 +1,13 @@
 import React from "react";
 import Link from "next/link";
+import { twMerge } from "tailwind-merge";
 
-interface ButtonProps {
-  label: string;
+type ButtonProps = React.PropsWithChildren<{
   href: string;
   className?: string;
-}
+}>;
 
-const index: React.FC<ButtonProps> = ({ label, href, className = "" }) => {
+const index: React.FC<ButtonProps> = ({ children, href, className = "" }) => {
   const baseStyles = `
     inline-flex items-center justify-center 
     w-auto px-8 py-4 rounded-lg
@@ -26,12 +26,12 @@ const index: React.FC<ButtonProps> = ({ label, href, className = "" }) => {
   return (
     <Link
       href={href}
-      className={`${baseStyles} ${textEffect}   ${className}`.replace(
-        /\s+/g,
-        " "
+      className={twMerge(
+        `${baseStyles} ${textEffect}`.replace(/\s+/g, " "),
+        `${className}`
       )}
     >
-      {label}
+      {children}
     </Link>
   );
 };

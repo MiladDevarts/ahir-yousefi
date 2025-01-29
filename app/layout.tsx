@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-import { Inter, Vazirmatn } from "next/font/google";
+import { Gupter, Inter, Vazirmatn } from "next/font/google";
 
 import SmoothScrollProvider from "@components/Providers/SmoothScrollProvider";
 
@@ -17,6 +17,13 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+// Gupter
+const gupter = Gupter({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-times",
+});
+
 export const metadata: Metadata = {
   title: "P91 — Poorya Arian",
   description: "Singer...",
@@ -28,7 +35,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${vazirmatn.variable} ${inter.variable}`}>
+    <html
+      lang="en"
+      className={`${vazirmatn.variable} ${inter.variable} ${gupter.variable}`}
+    >
       <body>
         <SmoothScrollProvider>{children}</SmoothScrollProvider>
       </body>

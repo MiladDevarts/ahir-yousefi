@@ -1,4 +1,3 @@
-
 import React from "react";
 import Button from "@common/Button";
 
@@ -13,7 +12,7 @@ const Card: React.FC<NewTrackProps> = (props) => {
   return (
     <div className="relative flex flex-col gap-6">
       <div
-        className="rounded-3xl w-full h-[400px] bg-center bg-cover"
+        className="rounded-3xl w-full h-[428px] bg-center bg-cover"
         style={{ backgroundImage: `url(${props.image})` }}
       ></div>
       <div className="flex flex-col gap-1">
@@ -23,7 +22,11 @@ const Card: React.FC<NewTrackProps> = (props) => {
         </span>
       </div>
 
-      <Button label={"Listen Now"} href={props.url} />
+      <div className="max-w-[14.125rem] w-full">
+        <Button href={props.url} className="w-full h-9 text-xs">
+          Listen Now
+        </Button>
+      </div>
     </div>
   );
 };

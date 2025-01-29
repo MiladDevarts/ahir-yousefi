@@ -20,6 +20,7 @@ module.exports = {
       fontFamily: {
         display: ["var(--font-vazirmatn)"],
         sans: ["var(--font-inter)"],
+        times: ["var(--font-times)"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
