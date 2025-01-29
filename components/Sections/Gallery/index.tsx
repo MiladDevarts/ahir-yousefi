@@ -1,21 +1,31 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { motion } from "motion/react";
+import ImageModal from "./ImageModal";
 
 interface GalleryItemProps {
   imageUrl: string;
   animation: "fade-right" | "fade-up" | "fade-left";
   className: string;
+  onClick: () => void;
 }
 
-const GalleryItem = ({ imageUrl, animation, className }: GalleryItemProps) => (
-  <div
+const GalleryItem = ({
+  imageUrl,
+  animation,
+  className,
+  onClick,
+}: GalleryItemProps) => (
+  <motion.div
     data-aos={animation}
     data-aos-duration="1000"
-    className={`rounded-[30px] w-full h-[250px] lg:h-[350px] bg-cover bg-center ${className}`}
+    className={`rounded-[30px] w-full h-[250px] lg:h-[350px] bg-cover bg-center cursor-pointer hover:scale-[1.02] transition-transform ${className}`}
     style={{ backgroundImage: `url('${imageUrl}')` }}
+    onClick={onClick}
+    layoutId={`gallery-image-${imageUrl}`}
   />
 );
 
@@ -41,6 +51,8 @@ const galleryItems = [
 ];
 
 const Gallery = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   useEffect(() => {
     Aos.init({
       easing: "ease-out-cubic",
@@ -59,9 +71,16 @@ const Gallery = () => {
             imageUrl={item.imageUrl}
             animation={item.animation}
             className={item.className}
+            onClick={() => setSelectedImage(item.imageUrl)}
           />
         ))}
       </div>
+
+      <ImageModal
+        isOpen={!!selectedImage}
+        imageUrl={selectedImage || ""}
+        onClose={() => setSelectedImage(null)}
+      />
     </section>
   );
 };
