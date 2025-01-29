@@ -6,13 +6,13 @@ import Link from "next/link";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-import Spotidy from "../Icons/White/Spotify";
-import Soundcloud from "../Icons/White/Soundcloud";
-import AppleMusic from "../Icons/White/AppleMusic";
-import Youtube from "../Icons/White/Youtube";
-import Telegram from "../Icons/White/Telegram";
+import Spotidy from "@ui/Icons/White/Spotify";
+import Soundcloud from "@ui/Icons/White/Soundcloud";
+import AppleMusic from "@ui/Icons/White/AppleMusic";
+import Youtube from "@ui/Icons/White/Youtube";
+import Telegram from "@ui/Icons/White/Telegram";
 
-import { socialMedia, GenralInfo } from "@/app/config";
+import { socialMedia, GenralInfo } from "@/config";
 
 const Hero = () => {
   useEffect(() => {

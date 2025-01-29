@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { AppleMusic, Play } from "../../UI/Icons";
+import { AppleMusic, Play } from "@ui/Icons";
 
 const Album = () => {
   useEffect(() => {

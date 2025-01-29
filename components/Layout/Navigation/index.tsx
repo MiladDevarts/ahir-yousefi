@@ -4,12 +4,12 @@ import React, { useEffect } from "react";
 import Link from "next/link";
 
 import Logo from "../Logo";
-import { Facebook, Instagram, TikTok, Twitter } from "@/components/UI/Icons";
+import { Facebook, Instagram, TikTok, Twitter } from "@ui/Icons";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-import { socialMedia, NavigationItems } from "@/app/config";
+import { socialMedia, NavigationItems } from "@/config";
 
 const Navigation = () => {
   useEffect(() => {

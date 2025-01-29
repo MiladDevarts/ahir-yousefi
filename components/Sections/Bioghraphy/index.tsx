@@ -6,9 +6,9 @@ import Link from "next/link";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-import { Facebook, Instagram, TikTok, Twitter } from "../Icons";
+import { Facebook, Instagram, TikTok, Twitter } from "@ui/Icons";
 
-import { socialMedia } from "@/app/config";
+import { socialMedia } from "@/config";
 
 const Biography = () => {
   useEffect(() => {

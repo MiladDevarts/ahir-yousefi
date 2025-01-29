@@ -26,7 +26,6 @@
       "@layout/*": ["./components/Layout/*"],
       "@sections/*": ["./components/Sections/*"],
       "@ui/*": ["./components/UI/*"],
-      "@icons/*": ["./components/UI/Icon/*"],
       "@lib/*": ["./lib/*"]
     }
   },

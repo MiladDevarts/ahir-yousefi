@@ -1,13 +1,7 @@
-import {
-  AppleMusic,
-  Soundcloud,
-  Spotify,
-  Telegram,
-  Youtube,
-} from "../../UI/Icons";
+import { AppleMusic, Soundcloud, Spotify, Telegram, Youtube } from "@ui/Icons";
 import Link from "next/link";
 
-import { socialMedia } from "@/app/config";
+import { socialMedia } from "@/config";
 
 const Footer = () => {
   return (

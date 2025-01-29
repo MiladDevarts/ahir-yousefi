@@ -7,7 +7,7 @@ interface ButtonProps {
   className?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ label, href, className = "" }) => {
+const index: React.FC<ButtonProps> = ({ label, href, className = "" }) => {
   const baseStyles = `
     inline-flex items-center justify-center 
     w-auto px-8 py-4 rounded-lg
@@ -36,4 +36,4 @@ const Button: React.FC<ButtonProps> = ({ label, href, className = "" }) => {
   );
 };
 
-export default Button;
+export default index;

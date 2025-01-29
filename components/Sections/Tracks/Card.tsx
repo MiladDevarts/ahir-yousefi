@@ -1,6 +1,6 @@
-import Link from "next/link";
 import React from "react";
-import Button from "../../Common/buttons";
+
+import Button from "@common/Button";
 
 interface NewTrackProps {
   image: string;
