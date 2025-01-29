@@ -18,4 +18,12 @@ export const GenralInfo = {
   new_release: "04/11/2025",
 } as const;
 
-export const NavigationItems = [{ title: "home", target: "#" }] as const;
+export const NavigationItems = [
+  { title: "Home", target: "#home" },
+  { title: "Bio", target: "#bio" },
+  { title: "New Album ", target: "#new_album" },
+  { title: "New Tracks", target: "#new_tracks" },
+  { title: "Music Player", target: "#music_player" },
+  { title: "Gallery", target: "#gallery" },
+  { title: "Contact", target: "#contact" },
+] as const;
