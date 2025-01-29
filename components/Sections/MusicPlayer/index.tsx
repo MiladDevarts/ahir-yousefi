@@ -116,19 +116,22 @@ const MusicPlayer = () => {
     <section className="container flex flex-col lg:flex-row gap-x-20 gap-y-10 my-44">
       <div className="w-full lg:w-1/2 h-[400px] lg:h-[700px]">
         <div className="relative flex flex-col gap-y-5 h-full">
-          <div className="flex gap-x-3 items-center">
-            <svg
-              width="26"
-              height="1"
-              viewBox="0 0 26 1"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <line y1="0.5" x2="26" y2="0.5" stroke="white" />
-            </svg>
-            <span className="text-gray-300 font-light text-lg">
-              Now you stream musics here
-            </span>
+          <div className="flex flex-col gap-2 mb-[60px]">
+            <div className="flex gap-3 items-center">
+              <svg
+                width="26"
+                height="1"
+                viewBox="0 0 26 1"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line y1="0.5" x2="26" y2="0.5" stroke="white" />
+              </svg>
+              <span className="text-gray-300 font-light text-lg">
+                Now you stream musics here
+              </span>
+            </div>
+            <h3 className="text-[36px] font-bold">Labkhand</h3>
           </div>
 
           <div className="flex flex-col gap-3">
