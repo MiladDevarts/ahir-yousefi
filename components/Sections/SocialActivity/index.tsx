@@ -31,15 +31,15 @@ const SocialActivity = () => {
         </div>
         <div className="lg:grow">
           <p className="text-[#7A7A7A] text-lg">
-            Ahir Yousefi, born in Tehran on August 10th, 1997, embarked on his
-            musical journey at the age of 16. His strong passion for music led
-            him to seamlessly transition from a background in electrical
-            engineering to pursue education in music at the Tehran University of
-            Art.
+            He uses music as a tool to cultivate his artistic mindset and
+            creativity. According to <b className="font-bold">Pooriya</b>, music
+            not only enhances his innovative perspective in other professional
+            fields but also serves as a source of inspiration for his personal
+            and professional growth.
             <br />
             <br />
-            Today, Ahir Yousefi is renowned as a songwriter, composer, musician,
-            and accomplished singer.
+            Today, <b className="font-bold">Pooriya Ariyan</b> is renowned as a
+            songwriter, composer, musician, and accomplished singer.
           </p>
         </div>
       </div>
