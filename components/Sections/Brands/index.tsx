@@ -25,7 +25,7 @@ const brands: BrandItem[] = [
   {
     name: "White Phoenix Sweden",
     url: "https://www.wps.community",
-    imageUrl: "/images/partners/wps.png",
+    imageUrl: "/images/brands/wps.png",
     width: 208, // w-52
     delay: 300,
   },

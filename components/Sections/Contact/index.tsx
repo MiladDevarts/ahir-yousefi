@@ -46,7 +46,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="container flex flex-col gap-y-6 items-center my-28"
+      className="container flex flex-col gap-y-6 items-center mt-40 mb-[90px]"
     >
       <h2 className="text-4xl font-display text-white mb-6 uppercase font-bold">
         Contact
@@ -60,7 +60,7 @@ const Contact = () => {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="flex flex-col gap-y-6 w-full lg:w-1/2"
+          className="flex flex-col gap-y-6 w-full lg:w-1/2 lg:border-x border-[#313131] px-[100px]"
         >
           <Input
             name="user_name"
