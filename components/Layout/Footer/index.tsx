@@ -9,26 +9,27 @@ const Footer = () => {
       <footer className="hidden lg:flex w-full bg-white text-black min-h-[100px]">
         <div className="container my-4 flex flex-col lg:flex-row items-center lg: justify-between gap-y-10">
           <div className="flex items-center gap-x-7">
-            <Link href={"#"}>
+            <Link href={socialMedia.spotify}>
               <Spotify />
             </Link>
-            <Link href={"#"}>
+            <Link href={socialMedia.sound_cloud}>
               <Soundcloud />
             </Link>
-            <Link href={"#"}>
+            <Link href={socialMedia.apple_music}>
               <AppleMusic />
             </Link>
-            <Link href={"#"}>
+            <Link href={socialMedia.youtube}>
               <Youtube />
             </Link>
-            <Link href={"#"}>
+            <Link href={socialMedia.telegram}>
               <Telegram />
             </Link>
           </div>
 
           <div>
             <span className="font-medium">
-              © 2025, Riv Design All Rights Reserved
+              © 2025, <Link href={"https://rivdesign.se"}>Riv Design</Link> All
+              Rights Reserved
             </span>
           </div>
         </div>
@@ -53,11 +54,8 @@ const Footer = () => {
             </Link>
           </div>
           <div>
-            <Link
-              href={"mailto:info@ahiryousefi.com"}
-              className="font-medium text-lg"
-            >
-              info@ahiryousefi.com
+            <Link href={"mailto:inf0@p91.bio"} className="font-medium text-lg">
+              inf0@p91.bio
             </Link>
           </div>
         </div>
