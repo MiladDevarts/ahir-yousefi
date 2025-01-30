@@ -27,7 +27,7 @@ const index = () => {
           }
         />
         <Card
-          image={"/images/thumbnails/hezarToo.jpg"}
+          image={"/images/thumbnails/hezartoo.jpg"}
           title={"Hezar Too"}
           release_date={"2020"}
           url={"#"}
