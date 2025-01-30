@@ -60,7 +60,7 @@ const Contact = () => {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="flex flex-col gap-y-6 w-full lg:w-1/2 lg:border-x border-[#313131] px-[100px]"
+          className="flex flex-col gap-y-6 w-full lg:w-1/2 lg:border-x border-[#313131] lg:px-[100px]"
         >
           <Input
             name="user_name"
