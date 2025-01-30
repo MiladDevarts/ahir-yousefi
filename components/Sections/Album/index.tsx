@@ -113,16 +113,16 @@ const Album = () => {
                   </div>
                   <div>
                     <div className="flex gap-8">
-                      <Link href={socialMedia.sound_cloud}>
+                      <Link href={socialMedia.sound_cloud} target="_blank">
                         <Soundcloud color="white" />
                       </Link>
-                      <Link href={socialMedia.apple_music}>
+                      <Link href={socialMedia.apple_music} target="_blank">
                         <AppleMusic color="white" />
                       </Link>
-                      <Link href={socialMedia.youtube}>
+                      <Link href={socialMedia.youtube} target="_blank">
                         <Youtube color="white" />
                       </Link>
-                      <Link href={socialMedia.telegram}>
+                      <Link href={socialMedia.telegram} target="_blank">
                         <Telegram color="white" />
                       </Link>
                     </div>

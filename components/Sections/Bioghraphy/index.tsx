@@ -6,7 +6,14 @@ import Link from "next/link";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-import { Facebook, Instagram, TikTok, Twitter } from "@ui/Icons";
+import {
+  Youtube,
+  Instagram,
+  Telegram,
+  TikTok,
+  Twitter,
+  Soundcloud,
+} from "@ui/Icons";
 
 import { socialMedia } from "@/config";
 
@@ -69,17 +76,17 @@ const Biography = () => {
             >
               <line y1="0.5" x2="24" y2="0.5" stroke="white" />
             </svg>
-            <Link href={"#"}>
+            <Link href={socialMedia.instagram} target="_blank">
               <Instagram />
             </Link>
-            <Link href={"#"}>
-              <Twitter />
+            <Link href={socialMedia.youtube} target="_blank">
+              <Youtube color="white" />
             </Link>
-            <Link href={"#"}>
-              <Facebook />
+            <Link href={socialMedia.telegram} target="_blank">
+              <Telegram color="white" />
             </Link>
-            <Link href={"#"}>
-              <TikTok />
+            <Link href={socialMedia.sound_cloud} target="_blank">
+              <Soundcloud color="white" />
             </Link>
           </div>
         </div>
@@ -106,11 +113,17 @@ const Biography = () => {
           >
             <line y1="0.5" x2="24" y2="0.5" stroke="white" />
           </svg>
-          <Link href={socialMedia.instagram}>
+          <Link href={socialMedia.instagram} target="_blank">
             <Instagram />
           </Link>
-          <Link href={socialMedia.tiktok}>
-            <TikTok />
+          <Link href={socialMedia.youtube} target="_blank">
+            <Youtube color="white" />
+          </Link>
+          <Link href={socialMedia.telegram} target="_blank">
+            <Telegram color="white" />
+          </Link>
+          <Link href={socialMedia.sound_cloud} target="_blank">
+            <Soundcloud color="white" />
           </Link>
         </div>
       </div>
