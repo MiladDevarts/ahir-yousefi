@@ -62,13 +62,13 @@ const Navigation = () => {
           </div>
 
           <div className="flex gap-4">
-            <Link href={socialMedia.youtube}>
+            <Link href={socialMedia.youtube} target="_blank">
               <Youtube color="white" />
             </Link>
-            <Link href={socialMedia.telegram}>
+            <Link href={socialMedia.telegram} target="_blank">
               <Telegram color="white" />
             </Link>
-            <Link href={socialMedia.instagram}>
+            <Link href={socialMedia.instagram} target="_blank">
               <Instagram color="white" />
             </Link>
           </div>
