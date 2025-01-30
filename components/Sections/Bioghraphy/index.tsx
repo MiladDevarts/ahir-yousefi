@@ -28,12 +28,12 @@ const Biography = () => {
       id="bio"
       className="container mt-10 mb-16 lg:my-44 overflow-hidden"
     >
-      <div className="flex flex-col lg:items-center lg:flex-row gap-y-4 lg:gap-x-8">
+      <div className="flex flex-col lg:items-center lg:flex-row gap-y-4 lg:gap-x-16">
         <div className="lg:w-2/3 lg:order-2">
           <h2
             data-aos="zoom-out-right"
             data-aos-delay="400"
-            className="text-white font-display text-3xl lg:text-[64px] mb-4 lg:mb-8 mt-6 lg:mt-12"
+            className="text-white font-display font-bold text-3xl lg:text-[64px] mb-4 lg:mb-16 mt-6 lg:mt-12"
           >
             BIO
           </h2>
@@ -42,7 +42,7 @@ const Biography = () => {
             data-aos-delay="500"
             className="w-full lg:border-b-2 lg:border-[#313131]"
           >
-            <p className="lg:max-w-lg text-sm lg:text-base mt-3 mb-4 lg:my-4 text-[#CBCBCB] lg:pl-6 lg:pb-10">
+            <p className="lg:max-w-lg text-sm lg:text-base mt-3 mb-4 lg:my-4 text-[#CBCBCB] lg:pb-10">
               Known internationally as P91, Pooriya Ariyan was born on April 11,
               1991, in Iran and is currently based in Sweden.
               <br />
