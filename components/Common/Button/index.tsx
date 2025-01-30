@@ -26,6 +26,7 @@ const index: React.FC<ButtonProps> = ({ children, href, className = "" }) => {
   return (
     <Link
       href={href}
+      target="_blank"
       className={twMerge(
         `${baseStyles} ${textEffect}`.replace(/\s+/g, " "),
         `${className}`
