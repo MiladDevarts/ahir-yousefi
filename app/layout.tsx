@@ -27,6 +27,9 @@ const gupter = Gupter({
 export const metadata: Metadata = {
   title: "P91 — Poorya Arian",
   description: "Singer...",
+  icons: {
+    icon: [{ url: "/favicon.ico" }, { url: "/icon.png", type: "image/png" }],
+  },
 };
 
 export default function RootLayout({
