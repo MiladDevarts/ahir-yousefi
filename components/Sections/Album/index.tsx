@@ -54,7 +54,7 @@ const Album = () => {
             data-aos-delay="100"
             className="lg:col-span-6 col-span-full"
           >
-            <Image src={ImgFarsi} alt="" quality={100} />
+            <Image src={ImgFarsi} alt="" width={65} quality={100} />
             <p className="font-sans text-[#989898] mt-5 lg:mt-7 text-xs lg:text-base">
               New album
             </p>
