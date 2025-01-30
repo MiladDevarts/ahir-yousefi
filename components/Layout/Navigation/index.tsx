@@ -4,7 +4,14 @@ import React, { useEffect } from "react";
 import Link from "next/link";
 
 import Logo from "../Logo";
-import { Facebook, Instagram, TikTok, Twitter } from "@ui/Icons";
+import {
+  Facebook,
+  Instagram,
+  Telegram,
+  TikTok,
+  Twitter,
+  Youtube,
+} from "@ui/Icons";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -41,7 +48,8 @@ const Navigation = () => {
           <MenuBtn />
         </span>
         <div className="hidden lg:flex gap-x-6">
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 relative">
+            <div className="absolute h-px w-3 top-3 -left-4 bg-whites -translate-x-full"></div>
             {NavigationItems.map((item) => (
               <Link
                 key={item.target}
@@ -51,6 +59,18 @@ const Navigation = () => {
                 {item.title}
               </Link>
             ))}
+          </div>
+
+          <div className="flex gap-4">
+            <Link href={socialMedia.youtube}>
+              <Youtube color="white" />
+            </Link>
+            <Link href={socialMedia.telegram}>
+              <Telegram color="white" />
+            </Link>
+            <Link href={socialMedia.instagram}>
+              <Instagram color="white" />
+            </Link>
           </div>
         </div>
       </nav>

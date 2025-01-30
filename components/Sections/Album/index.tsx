@@ -91,7 +91,7 @@ const Album = () => {
           <div className="col-span-full lg:col-span-4 lg:col-start-9 flex items-end justify-end">
             <div className="flex justify-end items-end pt-8 lg:pt-0">
               <div className="flex flex-col items-end justify-end">
-                <div className="flex items-center">
+                <Link href={socialMedia.spotify} className="flex items-center">
                   <div className="scale-75">
                     <Play />
                   </div>
@@ -104,7 +104,7 @@ const Album = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </Link>
 
                 <div className="flex gap-7 mt-6">
                   <div className="flex gap-3 items-center">
