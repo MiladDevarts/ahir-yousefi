@@ -34,9 +34,9 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <footer className="flex lg:hidden w-full bg-white text-black min-h-[100px]">
-        <div className="container my-4 flex flex-col lg:flex-row items-center lg: justify-between gap-y-10">
-          <div className="flex items-center gap-x-7">
+      <footer className="flex items-center lg:hidden w-full bg-white text-black h-32">
+        <div className="container flex flex-col gap-6 lg:flex-row items-center lg:justify-between">
+          <div className="flex items-center gap-7 mt-3">
             <Link href={socialMedia.spotify}>
               <Spotify />
             </Link>
@@ -54,8 +54,8 @@ const Footer = () => {
             </Link>
           </div>
           <div>
-            <Link href={"mailto:inf0@p91.bio"} className="font-medium text-lg">
-              inf0@p91.bio
+            <Link href={"mailto:info@p91.bio"} className="font-medium text-lg">
+              info@p91.bio
             </Link>
           </div>
         </div>
