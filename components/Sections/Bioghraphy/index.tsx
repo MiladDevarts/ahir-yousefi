@@ -42,9 +42,11 @@ const Biography = () => {
             data-aos-delay="500"
             className="w-full lg:border-b-2 lg:border-[#313131]"
           >
-            <p className="lg:max-w-lg text-sm lg:text-base mt-3 mb-4 lg:my-4 text-[#CBCBCB] lg:pb-10">
-              Known internationally as P91, Pooriya Ariyan was born on April 11,
-              1991, in Iran and is currently based in Sweden.
+            <p className=" text-sm lg:text-base mt-3 mb-4 lg:my-4 text-[#CBCBCB] lg:pb-10">
+              Known internationally as{" "}
+              <b className="font-bold">P91, Pooriya Ariyan</b> was born on
+              <b className="font-bold">April 11, 1991</b>, in Iran and is
+              currently based in Sweden.
               <br />
               <br />
               He holds degrees in design, management, and development. Pooriya
