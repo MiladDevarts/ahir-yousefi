@@ -4,6 +4,7 @@ import "./globals.css";
 import { Gupter, Inter, Vazirmatn } from "next/font/google";
 
 import SmoothScrollProvider from "@components/Providers/SmoothScrollProvider";
+import MenuContextProvider from "../Context/Menu";
 
 // Display
 const vazirmatn = Vazirmatn({
@@ -43,7 +44,9 @@ export default function RootLayout({
       className={`${vazirmatn.variable} ${inter.variable} ${gupter.variable}`}
     >
       <body>
-        <SmoothScrollProvider>{children}</SmoothScrollProvider>
+        <SmoothScrollProvider>
+          <MenuContextProvider>{children}</MenuContextProvider>
+        </SmoothScrollProvider>
       </body>
     </html>
   );

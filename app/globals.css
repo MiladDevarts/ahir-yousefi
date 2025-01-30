@@ -102,3 +102,8 @@ input:-webkit-autofill:active {
   -webkit-transition: background 0.15s ease-in-out;
   transition: background 0.15s ease-in-out;
 }
+
+.h-dvh {
+  height: 100vh;
+  height: 100dvh;
+}

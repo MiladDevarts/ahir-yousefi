@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <>
       <header
-        className="hidden lg:flex flex-col w-full max-h-[120vh] bg-no-repeat bg-center bg-cover pb-48"
+        className="hidden lg:flex flex-col w-full max-h-[1000px] h-screen bg-no-repeat bg-center bg-cover pb-48"
         style={{ backgroundImage: `url('/images/header/background.jpg')` }}
       >
         <Navigation />

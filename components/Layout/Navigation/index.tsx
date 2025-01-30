@@ -10,8 +10,14 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 import { socialMedia, NavigationItems } from "@/config";
+import { useMenu } from "@/hooks/useMenu";
+import { Menu } from "@components/Common/Menu/Menu";
+import { MobileMenu } from "@components/Common/Menu/MobileMenu";
+import { MenuBtn } from "@components/Common/Menu/MenuBtn";
 
 const Navigation = () => {
+  const { toggle, state } = useMenu();
+
   useEffect(() => {
     Aos.init({
       easing: "ease-out-cubic",
@@ -25,44 +31,31 @@ const Navigation = () => {
   }, []);
 
   return (
-    <nav
-      data-aos="fade-down"
-      className="container flex justify-between items-center lg:items-start py-6 lg:py-12 overflow-hidden"
-    >
-      <Logo />
-      <span className="inline-flex lg:hidden">
-        <svg
-          width="38"
-          height="9"
-          viewBox="0 0 38 9"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M4 0H38V2H4V0ZM15.5 7H38V9H15.5V7Z" fill="white" />
-        </svg>
-      </span>
-      <div className="hidden lg:flex gap-x-6">
-        <div className="flex flex-col gap-3">
-          {NavigationItems.map((item) => (
-            <Link
-              key={item.target}
-              href={item.target}
-              className="text-white hover:text-white/80 transition-colors"
-            >
-              {item.title}
-            </Link>
-          ))}
+    <>
+      <MobileMenu />
+      <nav
+        data-aos="fade-down"
+        className="container flex justify-between items-center lg:items-start py-6 lg:py-12 overflow-hidden z-[120]"
+      >
+        <Logo />
+        <span onClick={toggle} className="inline-flex lg:hidden">
+          <MenuBtn />
+        </span>
+        <div className="hidden lg:flex gap-x-6">
+          <div className="flex flex-col gap-3">
+            {NavigationItems.map((item) => (
+              <Link
+                key={item.target}
+                href={item.target}
+                className="text-white hover:text-white/80 transition-colors"
+              >
+                {item.title}
+              </Link>
+            ))}
+          </div>
         </div>
-        <div className="flex gap-x-7">
-          <Link href={socialMedia.instagram}>
-            <Instagram />
-          </Link>
-          <Link href={socialMedia.tiktok}>
-            <TikTok />
-          </Link>
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 };
 
