@@ -34,7 +34,9 @@ const MusicVideo = () => {
             </svg>
             Watch New Music video directly here
           </h5>
-          <h2 className="font-display text-[32px] my-3 pl-10">Labkhand</h2>
+          <h2 className="font-display font-bold text-[32px] my-3 pl-10">
+            Labkhand
+          </h2>
         </div>
         <svg
           className="mt-10"
