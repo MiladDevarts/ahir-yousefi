@@ -14,13 +14,17 @@ const index = () => {
           image={"/images/thumbnails/labkhand.jpg"}
           title={"Labkhand"}
           release_date={"2024"}
-          url={"#"}
+          url={
+            "https://open.spotify.com/track/4UCUXQYwDUU7pL3xWvHREN?si=3a4bb917df754462"
+          }
         />
         <Card
           image={"/images/thumbnails/mahrokh.jpg"}
           title={"Mahrokh"}
           release_date={"2022"}
-          url={"#"}
+          url={
+            "https://open.spotify.com/track/31UiTSqUxGrk5W59XSC9ag?si=ccb52059e83d4e73"
+          }
         />
         <Card
           image={"/images/thumbnails/hezarToo.jpg"}
