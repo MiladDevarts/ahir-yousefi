@@ -11,7 +11,6 @@ import "aos/dist/aos.css";
 
 import { socialMedia, NavigationItems } from "@/config";
 import { useMenu } from "@/hooks/useMenu";
-import { Menu } from "@components/Common/Menu/Menu";
 import { MobileMenu } from "@components/Common/Menu/MobileMenu";
 import { MenuBtn } from "@components/Common/Menu/MenuBtn";
 

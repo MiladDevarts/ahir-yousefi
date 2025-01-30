@@ -45,10 +45,14 @@ const MusicPlayer = () => {
     {}
   );
   const [currentTime, setCurrentTime] = useState<number>(0);
-  const audioRef = useRef<HTMLAudioElement>(new Audio(audioList[0].src));
+  const audioRef = useRef<HTMLAudioElement>(
+    typeof window !== "undefined" ? new Audio(audioList[0].src) : null
+  );
 
   useEffect(() => {
     const loadDurations = async () => {
+      if (typeof window === "undefined") return;
+
       const durations: Record<number, number> = {};
       for (let i = 0; i < audioList.length; i++) {
         const audio = new Audio(audioList[i].src);
@@ -62,6 +66,9 @@ const MusicPlayer = () => {
 
     // Add time update listener
     const audio = audioRef.current;
+
+    if (!audio) return;
+
     const updateTime = () => {
       setCurrentTime(audio.currentTime);
     };
@@ -73,6 +80,8 @@ const MusicPlayer = () => {
   }, []);
 
   useEffect(() => {
+    if (!audioRef.current) return;
+
     audioRef.current.src = audioList[currentTrack].src;
     setCurrentTime(0);
     if (isPlaying) {
@@ -81,6 +90,8 @@ const MusicPlayer = () => {
   }, [currentTrack]);
 
   useEffect(() => {
+    if (!audioRef.current) return;
+
     audioRef.current.volume = volume;
   }, [volume]);
 
@@ -89,6 +100,8 @@ const MusicPlayer = () => {
       setCurrentTrack(index);
       setIsPlaying(true);
     } else {
+      if (!audioRef.current) return;
+
       if (isPlaying) {
         audioRef.current.pause();
       } else {
@@ -108,6 +121,7 @@ const MusicPlayer = () => {
 
   const handleProgressChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const time = parseFloat(e.target.value);
+    if (!audioRef.current) return;
     audioRef.current.currentTime = time;
     setCurrentTime(time);
   };
