@@ -65,7 +65,8 @@ export const MobileMenu = () => {
                 <Link
                   href={nav.target}
                   onClick={() => {
-                    document.body.classList.remove("overflow-hidden");
+                    // @ts-expect-error
+                    window.lenis.isLocked = false;
                     close();
                   }}
                 >

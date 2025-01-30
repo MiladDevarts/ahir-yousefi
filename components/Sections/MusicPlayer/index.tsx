@@ -117,7 +117,7 @@ const MusicPlayer = () => {
       id="music_player"
       className="container flex flex-col lg:flex-row gap-x-20 lg:gap-y-10 my-44"
     >
-      <div className="w-full lg:w-1/2 h-[400px] lg:h-[700px] z-[2]">
+      <div className="w-full lg:w-1/2 lg:h-[700px] z-[2]">
         <div className="relative flex flex-col gap-y-5 h-full">
           <div className="flex flex-col gap-2 mb-[60px]">
             <div className="flex gap-3 items-center">
@@ -175,7 +175,7 @@ const MusicPlayer = () => {
           </div>
 
           {/* Player Controls */}
-          <div className="w-full bg-[#1B1B1B] bg-opacity-50 backdrop-blur-md p-6 rounded-t-[15px] lg:rounded-[15px] absolute bottom-0 left-0">
+          <div className="w-full bg-[#1B1B1B] bg-opacity-50 backdrop-blur-md p-6 rounded-t-[15px] lg:rounded-[15px] lg:absolute bottom-0 left-0">
             <div className="flex flex-col gap-4">
               <div className="flex items-center gap-4 absolute bottom-0 left-0 lg:left-5 right-0 lg:right-5">
                 {/* <span className="text-white w-10 [min-width:2.5rem]">
