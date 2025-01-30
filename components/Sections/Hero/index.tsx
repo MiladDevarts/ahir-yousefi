@@ -49,7 +49,9 @@ const Hero = () => {
           <li>Artist</li>
           <li>Composer</li>
         </ul>
-        <Image src={BlackPlay} width={100} alt={""} />
+        <Link href={"#music_video"}>
+          <Image src={BlackPlay} width={100} alt={""} />
+        </Link>
       </div>
 
       <div className="flex gap-4 lg:flex-row flex-col items-end justify-end lg:items-center">
