@@ -17,37 +17,41 @@ interface BrandItem {
 
 const brands: BrandItem[] = [
   {
+    name: "Kasiyans",
+    url: "https://www.wps.community",
+    imageUrl: "/images/brands/casiyans.png",
+    width: 130,
+    delay: 300,
+  },
+  {
     name: "White Phoenix Sweden",
     url: "https://www.wps.community",
     imageUrl: "/images/brands/wps.png",
-    width: 208,
+    width: 160,
     delay: 300,
     className: "-mt-6",
+  },
+  {
+    name: "Hel Queen",
+    url: "https://www.wps.community",
+    imageUrl: "/images/brands/hel-queen.svg",
+    width: 160,
+    delay: 300,
   },
   {
     name: "Riv",
     url: "https://rivdesign.se",
     imageUrl: "/images/brands/riv.png",
-    width: 144,
+    width: 90,
     delay: 200,
-  },
-  {
-    name: "Kasiyans",
-    url: "https://www.wps.community",
-    imageUrl: "/images/brands/casiyans.png",
-    width: 180,
-    delay: 300,
   },
 ];
 
 const BrandLink = ({ brand }: { brand: BrandItem }) => (
-  <Link
-    href={brand.url}
+  <div
     className={`flex-shrink-0 ${brand.className || ""}`}
     data-aos="zoom-out"
     data-aos-delay={brand.delay}
-    target="_blank"
-    rel="noopener noreferrer"
   >
     <div className="px-4">
       <Image
@@ -58,7 +62,7 @@ const BrandLink = ({ brand }: { brand: BrandItem }) => (
         priority
       />
     </div>
-  </Link>
+  </div>
 );
 
 const Brands = () => {
