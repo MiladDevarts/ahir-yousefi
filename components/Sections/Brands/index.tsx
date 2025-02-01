@@ -42,8 +42,9 @@ const brands: BrandItem[] = [
     name: "Riv",
     url: "https://rivdesign.se",
     imageUrl: "/images/brands/riv.png",
-    width: 90,
+    width: 100,
     delay: 200,
+    className: "mt-1",
   },
 ];
 
