@@ -40,11 +40,19 @@ const MusicVideo = () => {
         </div>
       </div>
       <Link href={video.youtube}>
-        <div className="container h-[400px] lg:h-[700px]">
-          <div
-            className="w-full h-full bg-center bg-cover rounded-t-[32px]"
-            style={{ backgroundImage: `url('/images/thumbnails/video/1.jpg')` }}
-          ></div>
+        <div className="container">
+          <div className="w-full overflow-hidden">
+            <div
+              className="relative w-full aspect-video rounded-t-[32px] min-h-[100px] lg:min-h-[500px] "
+              style={{
+                backgroundImage: `url('/images/thumbnails/video/1.jpg')`,
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+              }}
+            >
+              {/* Optional overlay or play button can go here */}
+            </div>
+          </div>
         </div>
       </Link>
     </section>
