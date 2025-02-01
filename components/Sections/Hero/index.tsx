@@ -45,12 +45,12 @@ const Hero = () => {
       </div>
 
       <div className="hidden lg:flex gap-14 items-center lg:mt-auto lg:mb-12">
-        <ul className="leading-8 ">
-          <li>Artist</li>
-          <li>Composer</li>
-        </ul>
+        <div className="flex flex-col text-whit leading-1">
+          <span className="">Listen</span>
+          <span className="text-[20px] -mt-2">Now</span>
+        </div>
         <Link href={"#music_video"}>
-          <Image src={BlackPlay} width={100} alt={""} />
+          <Image src={BlackPlay} width={80} alt={""} />
         </Link>
       </div>
 
