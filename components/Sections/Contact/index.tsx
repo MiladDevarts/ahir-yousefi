@@ -97,7 +97,7 @@ const Contact = () => {
           </Button>
         </form>
       )}
-      <div className="flex flex-col items-center gap-6 mt-[20px] lg:mb-[80px]">
+      <div className="flex flex-col items-center gap-6 text-sm mt-[20px] lg:mb-[80px]">
         <div className="flex gap-8">
           <span className="text-[#939393]">Or send email to</span>
           <Link className="text-white" href={"mailto:info@p91.bio"}>
@@ -113,7 +113,7 @@ const Contact = () => {
           </Link>
         </div>
       </div>
-      <div>
+      <div className="text-sm">
         <span className="text-[#939393]">Design by </span>
         <Link className="text-white" href={"https://rivdesign.se"}>
           Riv Design

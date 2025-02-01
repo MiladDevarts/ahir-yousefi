@@ -16,17 +16,24 @@ interface BrandItem {
 
 const brands: BrandItem[] = [
   {
-    name: "Kneat",
-    url: "https://rivdesign.se",
-    imageUrl: "/images/brands/kneat.svg",
-    width: 144, // w-36
-    delay: 200,
-  },
-  {
     name: "White Phoenix Sweden",
     url: "https://www.wps.community",
     imageUrl: "/images/brands/wps.png",
     width: 208, // w-52
+    delay: 300,
+  },
+  {
+    name: "Riv",
+    url: "https://rivdesign.se",
+    imageUrl: "/images/brands/riv.png",
+    width: 144, // w-36
+    delay: 200,
+  },
+  {
+    name: "Kasiyans",
+    url: "https://www.wps.community",
+    imageUrl: "/images/brands/casiyans.png",
+    width: 180, // w-52
     delay: 300,
   },
 ];
