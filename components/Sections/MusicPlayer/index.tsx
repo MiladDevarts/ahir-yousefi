@@ -137,7 +137,7 @@ const MusicPlayer = () => {
       id="music_player"
       className="container flex flex-col lg:flex-row gap-x-20 lg:gap-y-10 my-10 lg:my-44"
     >
-      <div className="w-full lg:w-1/2 lg:h-[700px] z-[2]">
+      <div className="w-full lg:w-1/2 lg:h-[600px] z-[2]">
         <div className="relative flex flex-col gap-y-5 h-full">
           <div className="flex flex-col gap-2 mb-[60px]">
             <div className="flex gap-3 items-center">
@@ -285,7 +285,7 @@ const MusicPlayer = () => {
       </div>
 
       <div
-        className="hidden lg:block w-full lg:w-[40%] h-[400px] lg:h-[700px] bg-center bg-cover rounded-[24px] relative"
+        className="hidden lg:block w-full lg:w-[40%] h-[400px] lg:h-[600px] bg-center bg-cover rounded-[24px] relative"
         style={{
           backgroundImage: `url('/images/music-player/background.jpg')`,
         }}
