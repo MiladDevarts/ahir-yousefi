@@ -14,6 +14,7 @@ import Email from "@components/UI/Icons/Email";
 import { Instagram, TikTok } from "@components/UI/Icons";
 
 import { socialMedia } from "@/config";
+import Button from "@components/Common/Button";
 
 const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -88,13 +89,12 @@ const Contact = () => {
             placeholder="Your message..."
           />
 
-          <button
-            type="submit"
-            disabled={loading}
-            className="rounded-2xl flex justify-center items-center w-full h-[70px] px-4 font-semibold bg-white text-black hover:cursor-pointer border border-white hover:bg-white/0 hover:text-white transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+          <Button
+            href={socialMedia.instagram}
+            className="w-full h-16 rounded-2xl"
           >
             {loading ? "Sending..." : "Send message"}
-          </button>
+          </Button>
         </form>
       )}
       <div className="flex flex-col items-center gap-6 mt-[20px] lg:mb-[80px]">
