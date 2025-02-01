@@ -54,8 +54,8 @@ const Footer = () => {
             </Link>
           </div>
           <div>
-            <Link href={"mailto:info@p91.bio"} className="font-medium text-lg">
-              info@p91.bio
+            <Link href={"https://p91.bio"} className="font-medium text-lg">
+              www.p91.bio
             </Link>
           </div>
         </div>

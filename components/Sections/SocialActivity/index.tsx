@@ -6,7 +6,7 @@ import { socialMedia } from "@/config";
 
 const SocialActivity = () => {
   return (
-    <section className="w-full bg-black py-10 my-44">
+    <section className="w-full bg-black py-10 my-12 lg:my-44">
       <div className="container flex flex-col lg:flex-row lg:items-center lg:gap-x-[4.5rem] gap-y-6">
         <div className="flex items-center flex-none gap-x-6 lg:gap-x-10">
           <Image

@@ -17,7 +17,7 @@ const Card: React.FC<NewTrackProps> = (props) => {
       ></div>
       <div className="flex flex-col">
         <h3 className="text-white font-sand text-[22px]">{props.title}</h3>
-        <span className="text-[#CBCBCB]">
+        <span className="text-[12px] text-[#CBCBCB]">
           Release Date : {props.release_date}
         </span>
       </div>
