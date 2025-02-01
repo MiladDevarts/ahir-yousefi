@@ -29,6 +29,12 @@ const audioList: AudioTrack[] = [
     src: "audio/mahrokh.mp3",
     duration: 0,
   },
+  {
+    name: "Hezar Too",
+    artist: "Pooriya Arian",
+    src: "audio/maze.mp3",
+    duration: 0,
+  },
 ];
 
 const formatTime = (seconds: number): string => {
