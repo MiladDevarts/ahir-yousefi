@@ -43,7 +43,7 @@ const MusicVideo = () => {
         <div className="container">
           <div className="w-full overflow-hidden">
             <div
-              className="relative w-full aspect-video rounded-t-[32px] min-h-[100px] lg:min-h-[500px] "
+              className="relative w-full aspect-video rounded-t-[32px] min-h-[300px] lg:min-h-[400px] "
               style={{
                 backgroundImage: `url('/images/thumbnails/video/1.jpg')`,
                 backgroundPosition: "center",
