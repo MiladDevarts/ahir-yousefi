@@ -22,7 +22,7 @@ const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
         <textarea
           ref={ref}
           className={twMerge(
-            "rounded-2xl text-white flex items-center w-full h-32 p-4 bg-[#1B1B1B] focus:outline-none",
+            "rounded-2xl text-white flex text-sm font-light items-center w-full h-32 p-4 placeholder:text-[#A6A6A6] bg-[#1B1B1B] focus:outline-none",
             className
           )}
           {...props}

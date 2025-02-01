@@ -24,7 +24,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           <input
             ref={ref}
             className={twMerge(
-              "rounded-2xl w-10/12 h-full px-4 font-light text-lg bg-transparent text-white placeholder:text-[#A6A6A6] focus:border-none focus:outline-none",
+              "rounded-2xl w-10/12 h-full px-4 font-light text-sm bg-transparent text-white placeholder:text-[#A6A6A6] focus:border-none focus:outline-none",
               className
             )}
             {...props}
