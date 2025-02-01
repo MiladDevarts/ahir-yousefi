@@ -106,7 +106,7 @@ const Album = () => {
                   </div>
                 </Link>
 
-                <div className="flex gap-7 mt-6">
+                <div className="hidden lg:flex gap-7 mt-6">
                   <div className="flex gap-3 items-center">
                     <p className="text-white text-base font-semibold">Or</p>
                     <div className="h-px w-9 bg-white"></div>
