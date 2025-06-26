@@ -18,6 +18,12 @@ interface AudioTrack {
 
 const audioList: AudioTrack[] = [
   {
+    name: "Ma Haminim",
+    artist: "Pooriya Arian",
+    src: "audio/mahaminim.mp3",
+    duration: 0,
+  },
+  {
     name: "Labkhand",
     artist: "Pooriya Arian",
     src: "audio/labkhand.mp3",
