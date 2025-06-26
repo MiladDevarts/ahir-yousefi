@@ -10,6 +10,12 @@ const index = () => {
         </h2>
       </div>
       <div className="w-full flex flex-col gap-y-6 lg:grid lg:grid-cols-3 lg:gap-x-4 ">
+      <Card
+          image={"/images/thumbnails/hezartoo.jpg"}
+          title={"Ma Haminim"}
+          release_date={"2025"}
+          url={"#"}
+        />
         <Card
           image={"/images/thumbnails/labkhand.jpg"}
           title={"Labkhand"}
@@ -26,12 +32,7 @@ const index = () => {
             "https://open.spotify.com/track/31UiTSqUxGrk5W59XSC9ag?si=ccb52059e83d4e73"
           }
         />
-        <Card
-          image={"/images/thumbnails/hezartoo.jpg"}
-          title={"Hezar Too"}
-          release_date={"2020"}
-          url={"#"}
-        />
+     
       </div>
     </section>
   );

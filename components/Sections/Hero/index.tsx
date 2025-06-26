@@ -36,9 +36,9 @@ const Hero = () => {
   return (
     <section className="container h-full flex flex-col justify-between lg:justify-normal">
       <div className="flex items-center gap-x-5 mt-10 lg:mt-0">
-        <span className="rounded-lg lg:rounded-2xl py-2 lg:py-4 px-4 lg:px-8 lg:text-lg bg-white text-black font-semibold italic">
-          New release
-        </span>
+        <Link href={"#music_player"} className="rounded-lg lg:rounded-2xl py-2 lg:py-4 px-4 lg:px-8 lg:text-lg bg-white text-black font-semibold italic">
+          New Release
+        </Link>
         <span className="text-white font-semibold">
           {GenralInfo.new_release}
         </span>
