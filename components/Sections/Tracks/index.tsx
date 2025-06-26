@@ -11,7 +11,7 @@ const index = () => {
       </div>
       <div className="w-full flex flex-col gap-y-6 lg:grid lg:grid-cols-3 lg:gap-x-4 ">
       <Card
-          image={"/images/thumbnails/hezartoo.jpg"}
+          image={"/images/thumbnails/mahaminim.jpg"}
           title={"Ma Haminim"}
           release_date={"2025"}
           url={"#"}
