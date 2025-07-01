@@ -30,7 +30,7 @@ const SocialActivity = () => {
           </div>
         </div>
         <div className="lg:grow">
-          <p className="text-[#7A7A7A] text-lg">
+          <p className="text-[#7A7A7A] font-light text-[14px]">
             He uses music as a tool to cultivate his artistic mindset and
             creativity. According to <b className="font-bold">Pooriya</b>, music
             not only enhances his innovative perspective in other professional

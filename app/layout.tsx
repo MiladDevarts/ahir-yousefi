@@ -22,7 +22,7 @@ const gupter = Gupter({
 });
 
 export const metadata: Metadata = {
-  title: "P91 — Poorya Arian",
+  title: "P91 — Poorya Ariyan",
   description: "Singer, Songwriter, and Musician - Official Website",
 
   icons: {
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "P91 — Poorya Arian",
+    title: "P91 — Poorya Ariyan",
     description: "Singer, Songwriter, and Musician - Official Website",
     url: "https://p91.bio",
     siteName: "P91 Official",
@@ -45,19 +45,19 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "P91 - Poorya Arian",
+        alt: "P91 - Poorya Ariyan",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "P91 — Poorya Arian",
+    title: "P91 — Poorya Ariyan",
     description: "Singer, Songwriter, and Musician - Official Website",
     images: ["/og-image.jpg"],
   },
 
-  keywords: ["P91", "Poorya Arian", "Singer", "Musician", "Music"],
+  keywords: ["P91", "Poorya Ariyan", "Singer", "Musician", "Music"],
   viewport: "width=device-width, initial-scale=1, maximum-scale=1",
   themeColor: "#000000",
 };

@@ -49,7 +49,7 @@ const Contact = () => {
       id="contact"
       className="container flex flex-col gap-y-6 items-center mt-6 lg:mt-40 mb-[90px]"
     >
-      <h2 className="text-4xl font-display text-white mb-6 uppercase font-bold">
+      <h2 className="text-2xl font-display font-bold text-white mb-6 uppercase">
         Contact
       </h2>
 
