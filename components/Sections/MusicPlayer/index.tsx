@@ -228,7 +228,7 @@ const MusicPlayer = () => {
               </div>
 
               <div className="flex gap-y-4 lg:gap-x-4 justify-between flex-wrap lg:flex-nowrap">
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center max-lg:w-[80%]">
                   <div>
                     <h3 className="text-white font-semibold">
                       {audioList[currentTrack].name}
