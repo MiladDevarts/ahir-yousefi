@@ -276,7 +276,7 @@ const MusicPlayer = () => {
                   />
                 </div>
                 <a
-                  href={`/audio/${audioList[currentTrack].src}`}
+                  href={audioList[currentTrack].src}
                   download={`${audioList[currentTrack].name} - ${audioList[currentTrack].artist}.mp3`}
                   className="size-6 min-w-[1.5rem] flex items-center max-lg:order-2"
                 >
