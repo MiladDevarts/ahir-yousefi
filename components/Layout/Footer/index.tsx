@@ -27,11 +27,18 @@ const Footer = () => {
           </div>
 
           <div>
-            
             <span className="font-medium">
-              © 2025, <Link href={"https://p91.bio"}>P91</Link> All
-              Rights Reserved
+              © 2025, <Link href={"https://p91.bio"}>P91</Link> All Rights
+              Reserved
             </span>
+            <span className="mx-2 text-black/30">|</span>
+            <Link
+              target="_blank"
+              className="text-black/30 hover:text-black/60 transition"
+              href="https://rivdesign.se/"
+            >
+              Designed by <span className="underline">Riv Design</span>
+            </Link>
           </div>
         </div>
       </footer>
