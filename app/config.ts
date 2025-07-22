@@ -15,7 +15,7 @@ export const video = {
 } as const;
 
 export const GenralInfo = {
-  new_release: "07 July 2025",
+  new_release: "23 July 2025",
 } as const;
 
 export const NavigationItems = [
