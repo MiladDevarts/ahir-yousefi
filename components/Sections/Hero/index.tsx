@@ -45,10 +45,10 @@ const Hero = () => {
       </div>
 
       <div className="hidden lg:flex gap-14 items-center lg:mt-auto lg:mb-12">
-        <div className="flex flex-col text-whit leading-1">
+        <Link href={"#music_player"} className="flex flex-col text-whit leading-1">
           <span className="">Listen</span>
           <span className="text-[20px] -mt-2">Now</span>
-        </div>
+        </Link>
         <Link href={"#music_video"}>
           <Image src={BlackPlay} width={80} alt={""} />
         </Link>

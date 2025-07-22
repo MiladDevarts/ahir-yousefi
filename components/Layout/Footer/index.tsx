@@ -27,8 +27,9 @@ const Footer = () => {
           </div>
 
           <div>
+            
             <span className="font-medium">
-              © 2025, <Link href={"https://rivdesign.se"}>Riv Design</Link> All
+              © 2025, <Link href={"https://p91.bio"}>P91</Link> All
               Rights Reserved
             </span>
           </div>

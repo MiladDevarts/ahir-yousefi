@@ -113,12 +113,7 @@ const Contact = () => {
           </Link>
         </div>
       </div>
-      <div className="text-sm">
-        <span className="text-[#939393]">Design by </span>
-        <Link className="text-white" href={"https://rivdesign.se"}>
-          Riv Design
-        </Link>
-      </div>
+   
     </section>
   );
 };

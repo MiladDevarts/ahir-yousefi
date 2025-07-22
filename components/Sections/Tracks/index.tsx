@@ -13,8 +13,8 @@ const index = () => {
       <Card
           image={"/images/thumbnails/mahaminim.jpg"}
           title={"Ma Haminim"}
-          release_date={"Soon — 2025"}
-          url={"#"}
+          release_date={"2025"}
+          url={"https://lnk.bio/p91.bio"}
         />
         <Card
           image={"/images/thumbnails/labkhand.jpg"}

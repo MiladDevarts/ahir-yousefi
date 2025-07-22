@@ -19,25 +19,25 @@ interface AudioTrack {
 const audioList: AudioTrack[] = [
   {
     name: "Ma Haminim (Soon)",
-    artist: "Pooriya Ariyan",
+    artist: "p91",
     src: "audio/mahaminim.mp3",
     duration: 0,
   },
   {
     name: "Labkhand",
-    artist: "Pooriya Ariyan",
+    artist: "P91",
     src: "audio/labkhand.mp3",
     duration: 0,
   },
   {
     name: "Mahrokh",
-    artist: "Pooriya Ariyan",
+    artist: "P91",
     src: "audio/mahrokh.mp3",
     duration: 0,
   },
   {
     name: "Hezar Too",
-    artist: "Pooriya Ariyan",
+    artist: "P91",
     src: "audio/maze.mp3",
     duration: 0,
   },
