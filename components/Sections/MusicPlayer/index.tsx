@@ -227,7 +227,7 @@ const MusicPlayer = () => {
                 </span> */}
               </div>
 
-              <div className="flex gap-4 justify-between flex-wrap lg:flex-nowrap">
+              <div className="flex gap-y-4 lg:gap-x-4 justify-between flex-wrap lg:flex-nowrap">
                 <div className="flex justify-between items-center">
                   <div>
                     <h3 className="text-white font-semibold">
@@ -238,7 +238,7 @@ const MusicPlayer = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex justify-center items-center gap-6 order-last w-full lg:w-auto lg:order-none">
+                <div className="flex justify-center items-center gap-4 order-last w-1/2 lg:w-auto lg:order-none">
                   <BackwardIcon
                     className="text-white w-6 h-6 cursor-pointer"
                     onClick={playPrev}
@@ -258,7 +258,7 @@ const MusicPlayer = () => {
                     onClick={playNext}
                   />
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 order-last lg:order-none w-[40%] lg:w-24">
                   <SpeakerWaveIcon className="text-white w-5 h-5" />
                   <input
                     type="range"
@@ -267,7 +267,7 @@ const MusicPlayer = () => {
                     step="0.1"
                     value={volume}
                     onChange={(e) => setVolume(parseFloat(e.target.value))}
-                    className="w-24 h-1 bg-gray-600 rounded-lg appearance-none cursor-pointer volume--range__slider"
+                    className="h-1 bg-gray-600 rounded-lg appearance-none cursor-pointer volume--range__slider"
                     style={{
                       backgroundImage: `linear-gradient(to right, #fff ${
                         volume * 100
@@ -275,6 +275,25 @@ const MusicPlayer = () => {
                     }}
                   />
                 </div>
+                <a
+                  href={`/audio/${audioList[currentTrack].src}`}
+                  download={`${audioList[currentTrack].name} - ${audioList[currentTrack].artist}.mp3`}
+                  className="size-6 min-w-[1.5rem] flex items-center max-lg:order-2"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+                    />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
