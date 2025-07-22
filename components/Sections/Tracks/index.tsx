@@ -21,7 +21,7 @@ const index = () => {
           title={"Labkhand"}
           release_date={"2024"}
           url={
-            "https://open.spotify.com/track/4UCUXQYwDUU7pL3xWvHREN?si=3a4bb917df754462"
+            "https://lnk.bio/p91.bio"
           }
         />
         <Card
@@ -29,7 +29,7 @@ const index = () => {
           title={"Mahrokh"}
           release_date={"2022"}
           url={
-            "https://open.spotify.com/track/31UiTSqUxGrk5W59XSC9ag?si=ccb52059e83d4e73"
+            "https://lnk.bio/p91.bio"
           }
         />
      
