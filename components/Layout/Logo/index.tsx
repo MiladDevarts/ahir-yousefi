@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Logo = () => {
   return (
-    <Link href={"public/images/p91-logo.png"}>
+    <Link href={"#contact"}>
       <Image src="/images/p91-logo.png" alt="P91 Personal Website" width={33} height={33} />
     </Link>
   );

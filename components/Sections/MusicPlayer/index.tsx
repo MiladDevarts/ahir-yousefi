@@ -18,7 +18,7 @@ interface AudioTrack {
 
 const audioList: AudioTrack[] = [
   {
-    name: "Ma Haminim (Soon)",
+    name: "Ma Haminim",
     artist: "p91",
     src: "audio/mahaminim.mp3",
     duration: 0,
@@ -35,12 +35,7 @@ const audioList: AudioTrack[] = [
     src: "audio/mahrokh.mp3",
     duration: 0,
   },
-  {
-    name: "Hezar Too",
-    artist: "P91",
-    src: "audio/maze.mp3",
-    duration: 0,
-  },
+
 ];
 
 const formatTime = (seconds: number): string => {
